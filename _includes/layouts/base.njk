@@ -14,6 +14,25 @@ site_url: 'tto.koser.us'
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        {{ content | safe }}
+        <header>logo</header>
+        <nav>
+            <ol>
+                <li><a href="#">Episodes</a>
+                <li><a href="#">Subscribe</a>
+                <li><a href="#">About</a>
+                <li><a href="#">Latest</a>
+                <li><a href="#">Recommended</a>
+                <li><a href="#">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a>
+        </nav>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+            <ol>
+                <li>[icon] Podcast by Melissa and Brian Koser
+                <li>[icon] Website by Brian Koser
+                <li>[icon] Logo by Matt Koser
+            </ol>
+        </footer>
     </body>
 </html>
