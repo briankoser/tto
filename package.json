@@ -4,10 +4,8 @@
   "description": "The website for our podcast, Ten to One. Written in 11ty",
   "main": "index.js",
   "scripts": {
-    "build": "npx eleventy",
-    "watch": "npx eleventy --serve",
-    "serve": "http-server ./_site",
-    "dev": "run-p watch serve"
+    "dev": "npx eleventy --serve",
+    "prod": "npx eleventy"
   },
   "repository": {
     "type": "git",
@@ -21,7 +19,6 @@
   },
   "homepage": "https://github.com/briankoser/tto#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.3",
-    "npm-run-all": "^4.1.3"
+    "@11ty/eleventy": "^0.8.3"
   }
 }
