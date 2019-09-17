@@ -8,7 +8,7 @@ layout: base
     </header>
     
     <div class="e-content">
-        <audio src="http://{{ cdn_url }}/{{ slug }}.mp3" preload="metadata" controls>
+        <audio src="{{ metadata.cdn_url }}/{{ page.fileSlug }}.mp3" preload="metadata" controls>
         </audio>
         
         <p>{{ description }}</p>
