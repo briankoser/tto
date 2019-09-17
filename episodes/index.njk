@@ -1,0 +1,8 @@
+---
+layout: base
+---
+<h1>Episodes</h1>
+{% for episode in collections.episodes | reverse %}
+    <a href="{{ episode.url }}">№ {{ episode.data.number }} {{ episode.data.title }}</a>
+    {{ episode.date }}
+{% endfor %}
