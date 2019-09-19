@@ -13,4 +13,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("list", listShortCode);
     eleventyConfig.addShortcode("linkList", linkListShortCode);
     eleventyConfig.addShortcode("movieList", movieListShortCode);
+
+    eleventyConfig.addPassthroughCopy("js");
 };
