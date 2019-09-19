@@ -4,35 +4,35 @@ number: 2
 title: Musicals
 description: Melissa and Brian each pick their top ten movie musicals.
 date: 2016-06-02
+hosts:
+  - Brian
+  - Melissa
 bytes: 16643378
 duration: '0:34:40'
 tags: ['episodes', 'movies', 'musicals']
+list_brian:
+  - {"slug": "seven-brides-for-seven-brothers", "title": "Seven Brides for Seven Brothers"}
+  - {"slug": "the-music-man", "title": "The Music Man"}
+  - {"slug": "singin-in-the-rain", "title": "Singin’ in the Rain"}
+  - {"slug": "yankee-doodle-dandy", "title": "Yankee Doodle Dandy"}
+  - {"slug": "the-sound-of-music", "title": "The Sound of Music"}
+  - {"slug": "in-the-good-old-summertime", "title": "In the Good Old Summertime"}
+  - {"slug": "mary-poppins", "title": "Mary Poppins"}
+  - {"slug": "the-phantom-of-the-opera-2004", "title": "The Phantom of the Opera"}
+  - {"slug": "muppet-treasure-island", "title": "Muppet Treasure Island"}
+  - {"slug": "fiddler-on-the-roof", "title": "Fiddler on the Roof"}
+list_melissa: 
+  - {"slug": "hello-dolly", "title": "Hello, Dolly!", "replaced": "How the Grinch Stole Christmas"}
+  - {"slug": "road-to-utopia", "title": "Road to Utopia"}
+  - {"slug": "state-fair", "title": "State Fair"}
+  - {"slug": "seven-brides-for-seven-brothers", "title": "Seven Brides for Seven Brothers"}
+  - {"slug": "the-music-man", "title": "The Music Man"}
+  - {"slug": "my-fair-lady", "title": "My Fair Lady"}
+  - {"slug": "dr-horribles-sing-along-blog-2008", "title": "Dr. Horrible’s Sing-Along Blog"}
+  - {"slug": "the-phantom-of-the-opera-2004", "title": "The Phantom of the Opera"}
+  - {"slug": "fiddler-on-the-roof", "title": "Fiddler on the Roof"}
+  - {"slug": "scrooge-1970", "title": "Scrooge"}
 ---
 
-<h2>Brian</h2>
-<ol reversed>
-<li>Seven Brides for Seven Brothers</li>
-<li>The Music Man</li>
-<li>Singin’ in the Rain</li>
-<li>Yankee Doodle Dandy</li>
-<li>The Sound of Music</li>
-<li>In the Good Old Summertime</li>
-<li>Mary Poppins</li>
-<li>Andrew Lloyd Webber’s The Phantom of the Opera</li>
-<li>Muppet Treasure Island</li>
-<li>Fiddler on the Roof</li>
-</ol>
-
-<h2>Melissa</h2>
-<ol reversed>
-<li><span style="text-decoration:line-through;">How the Grinch Stole Christmas</span> Hello, Dolly!</li>
-<li>Road to Utopia</li>
-<li>State Fair</li>
-<li>Seven Brides for Seven Brothers</li>
-<li>The Music Man</li>
-<li>My Fair Lady</li>
-<li>Dr. Horrible’s Sing-Along Blog</li>
-<li>Andrew Lloyd Webber’s The Phantom of the Opera</li>
-<li>Fiddler on the Roof</li>
-<li>Scrooge</li>
-</ol>
+{% movieList "Brian", list_brian %}
+{% movieList "Melissa", list_melissa %}
