@@ -2,8 +2,21 @@
 layout: base
 ---
 
-Recommended episode
+<p>Ten to One is the podcast where Melissa and Brian Koser make top ten lists about everything.</p>
 
-Latest episode
+<div class="home-episodes">
+    <div class="section">
+        <h2>Latest<h2>
+        {% episodeCard collections.episodes | last, metadata.cdn_url %}
+    </div>
 
-Blog
+    {# <div class="section">
+        <h2>Recommended</h2>
+        episode card - latest recommended
+    </div> #}
+</div>
+
+{# <div class="section">
+    <h2>Blog</h2>
+    blog post card - latest
+</div> #}
