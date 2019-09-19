@@ -16,6 +16,15 @@ layout: base
         <details class="spoilers">
             <summary>Expand for show notes. Spoilers!</summary>
             {{ content | safe }}
+
+            {% if notes %}
+            <h2>Notes</h2>
+            <ul>
+            {% for note in notes %}
+              <li>{{note | safe}}
+            {% endfor %}
+            </ul>
+            {% endif %}
         </details>
     
         <h2>Feedback</h2>
