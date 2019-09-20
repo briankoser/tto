@@ -4,7 +4,9 @@ module.exports = function(eleventyConfig) {
     const linkListShortCode = require('./_includes/shortcodes/linklist-shortcode.js');
     const movieListShortCode = require('./_includes/shortcodes/movielist-shortcode.js');
 
-    eleventyConfig.addFilter("readableDate", dateObj => dateObj.toLocaleString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}));
+    let humanizeDate = dateObj => dateObj.toLocaleString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
+    eleventyConfig.addFilter("episodeReadableDate", episode => humanizeDate(episode.date));
+    eleventyConfig.addFilter("readableDate", humanizeDate);
     eleventyConfig.addFilter("rssTags", tags => tags.filter(tag => !['episodes'].includes(tag)));
     eleventyConfig.addFilter("utcString", dateObj => dateObj.toUTCString().replace(' GMT', ''));
     eleventyConfig.addFilter("year", dateObj => dateObj.getFullYear());
