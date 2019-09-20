@@ -1,0 +1,71 @@
+---
+layout: false
+permalink: /feed.rss
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:cc="http://web.resource.org/cc/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:media="http://search.yahoo.com/mrss/"
+>
+	<channel>
+		<title>{{ metadata.podcast_name }}</title>
+		<atom:link href="{{ metadata.site_url }}/feed.rss" rel="self" type="application/rss+xml" />
+		<link>{{ metadata.site_url }}</link>
+		<description>{{ metadata.site_description }}</description>
+		<lastBuildDate>{{ page.date | utcString }} +0000</lastBuildDate>
+		<pubDate>{{ page.date | utcString }} +0000</pubDate>
+		<language>en-US</language>	
+		<copyright>Copyright © {{ page.date | year }} {{metadata.author_name}}</copyright>
+		<managingEditor>{{ metadata.author_email }} (Melissa Koser)</managingEditor>
+		<webMaster>{{ metadata.author_email }} (Brian Koser)</webMaster>
+		<image>
+			<url>{{ metadata.cdn_url }}/img/logo-album.png</url>
+			<title>{{ metadata.podcast_name }}</title>
+			<link>{{ metadata.site_url }}</link>
+		</image>
+		<itunes:subtitle>Top Ten Lists of Everything</itunes:subtitle>
+		<itunes:summary>{{metadata.site_description}}</itunes:summary>
+		<itunes:keywords>Koser, Top, Ten, List, Brian, Melissa</itunes:keywords>
+		<itunes:category text="Arts">
+			<itunes:category text="Books" />
+		</itunes:category>
+        <itunes:category text="Leisure">
+			<itunes:category text="Games" />
+			<itunes:category text="Hobbies" />
+		</itunes:category>
+		<itunes:category text="Religion &#38; Spirituality">
+			<itunes:category text="Christianity" />
+		</itunes:category>
+        <itunes:category text="TV &#38; Film">
+			<itunes:category text="Film Reviews" />
+			<itunes:category text="TV Reviews" />
+		</itunes:category>
+		<itunes:author>{{metadata.author_name}}</itunes:author>
+		<itunes:owner>
+			<itunes:name>Melissa Koser</itunes:name>
+			<itunes:email>{{ metadata.author_email }}</itunes:email>
+		</itunes:owner>
+		<itunes:block>no</itunes:block>
+		<itunes:explicit>No</itunes:explicit>
+		<itunes:image href="{{ metadata.cdn_url }}/img/logo-album.png" />
+		{%- for episode in collections.episodes | reverse -%}
+		<item>
+			<title>№ {{ episode.data.number }}: {{ episode.data.title }}</title>
+			<link>{{ metadata.site_url }}/</link>
+			<guid isPermaLink="false">{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3</guid>
+			<description>{{ episode.data.description }}</description>
+			<enclosure url="{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3" length="{{ episode.data.bytes }}" type="audio/mpeg" />
+			<pubDate>{{ episode.date }} +0000</pubDate>
+			<category>Podcasts</category>
+			
+			<itunes:duration>{{ episode.data.duration }}</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords>top ten {{ episode.data.tags | rssTags | join(" ") }}</itunes:keywords>
+			<itunes:block>no</itunes:block>
+		</item>
+		{% endfor %}
+	</channel>
+</rss>
