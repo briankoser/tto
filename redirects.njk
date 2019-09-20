@@ -1,0 +1,7 @@
+---
+permalink: /_redirects
+---
+
+{%- for episode in collections.episodes -%}
+    /{{episode.data.number}}    {{episode.url}}
+{% endfor %}
