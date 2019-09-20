@@ -13,8 +13,8 @@
             <ol>
                 <li><a href="/episodes/">Episodes</a>
                 <li><a href="/subscribe/">Subscribe</a>
-                <li><a href="#">Latest</a>
-                <li><a href="#">Recommended</a>
+                <li>Latest: {% episodeInline collections.episodes | last, metadata.cdn_url %}
+                {# <li><a href="#">Recommended</a> #}
                 <li><a href="/feed.rss">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a>
         </nav>
         <main>
