@@ -359,7 +359,8 @@ kbd kbd {
 .icon {
 	display: inline-block;
 	color: #333;
-	fill: currentColor;
+    /* fill: currentColor; */
+    fill: rgb(255, 83, 73);
 	font-size: 24px;
 	height: 1em;
 	width: 1.3em;
