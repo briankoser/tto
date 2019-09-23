@@ -348,3 +348,32 @@ kbd kbd {
     color: white;
     text-shadow: none; 
 }
+
+
+
+
+
+/*
+    ICONS
+*/
+.icon {
+	display: inline-block;
+	color: #333;
+	fill: currentColor;
+	font-size: 24px;
+	height: 1em;
+	width: 1.3em;
+}
+
+.icon-demo {
+    width: 800px; 
+    margin: auto;
+    font-size: 24px;
+}
+
+.icon-demo li {
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
