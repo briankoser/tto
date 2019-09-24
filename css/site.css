@@ -356,15 +356,6 @@ kbd kbd {
 /*
     ICONS
 */
-.icon {
-	display: inline-block;
-	color: white;
-    fill: currentColor;
-	font-size: 24px;
-	height: 1em;
-	width: 1.3em;
-}
-
 .icon-demo-container {
     width: 800px; 
     margin: auto;
@@ -386,9 +377,15 @@ kbd kbd {
     margin-top: 3em;
 }
 
+.icon-demo img {
+    height: 32px;
+    width: 32px;
+}
+
 .icon-demo-md,
 .icon-demo-orion-solid,
-.icon-demo-orion-line {
+.icon-demo-orion-line,
+.icon-demo-icons8-windows {
     background-color: rgb(255, 83, 73);
     color: white;
 }
@@ -396,4 +393,17 @@ kbd kbd {
 .icon-demo-orion-line {
     stroke: white;
     stroke-width: 3;
+}
+
+.icon-container {
+    width: 1.5em;
+}
+
+.icon {
+	display: inline-block;
+	color: white;
+    fill: currentColor;
+	font-size: 24px;
+	height: 1em;
+	width: 1.3em;
 }
