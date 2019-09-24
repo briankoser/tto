@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Real Estate</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M2.98 32.969L9 27.805V61a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V42a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v19a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V28.605l6 4.346L64 30l-9-7.415V11a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v3.564L32.019 2.1 0 29z"
+  fill="#202020"></path>
+</svg>

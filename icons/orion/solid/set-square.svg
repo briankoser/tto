@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Set Square</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M55.8 55.8l-2.6 2.6-2.8-2.8L53 53l-4.6-4.6-2.7 2.6-2.8-2.8 2.6-2.6-4.6-4.6-2.6 2.6-2.8-2.8 2.6-2.6-4.6-4.6-2.7 2.4-2.8-2.8 2.6-2.6L26 26l-2.6 2.6-2.8-2.8 2.6-2.6-4.6-4.6-2.6 2.6-3-2.9 2.6-2.6L11 11l-2.6 2.6-2.9-2.8 2.7-2.6L0 0v64h64zM9 55V26.2L37.8 55z"
+  fill="#202020"></path>
+</svg>

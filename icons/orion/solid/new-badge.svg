@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>New Badge</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M62 26l-4.6-4.6V15l-6-2.5L49 6.6h-6.5L38 2l-6 2.5L26 2l-4.5 4.6H15l-2.5 6L6.6 15v6.5L2 26l2.5 6L2 38l4.6 4.6V49l6 2.5 2.5 6h6.5L26 62l6-2.5 6 2.5 4.6-4.6H49l2.5-6 6-2.5v-6.4L62 38l-2.5-6zM22 40h-3.2L14 32.7V40h-4V24h3.1l.6.9 4.3 6.6V24h4zm12-12h-6v2h4v4h-4v2h6v4H24V24h10zm17.9 12h-3.5l-2.5-7.5-2.7 7.5h-3.4l-4.2-15.5 3.9-1.1 2.3 8.6 2.1-6h4l2 6.1 2.4-8.6 3.8 1.1z"
+  fill="#202020"></path>
+</svg>

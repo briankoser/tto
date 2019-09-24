@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Star</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  fill="#202020" d="M64.04 24.805L41.504 22.13 32 1.511 22.494 22.13-.04 24.805l16.661 15.413-4.424 22.271L32 51.398l19.803 11.091-4.424-22.271L64.04 24.805z"></path>
+</svg>

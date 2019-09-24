@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>RSS</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M8.6 46.746a8.627 8.627 0 1 0 8.6 8.627 8.678 8.678 0 0 0-8.6-8.627zM.7 21.567H.2V33.5h.5a29.836 29.836 0 0 1 29.8 29.8v.7h11.9v-.7A41.719 41.719 0 0 0 .7 21.567z"
+  fill="#202020"></path>
+  <path data-name="layer1" d="M.7 0H.2v11.937h.5A51.4 51.4 0 0 1 52 63.3v.7h12v-.7A63.369 63.369 0 0 0 .7 0z"
+  fill="#202020"></path>
+</svg>

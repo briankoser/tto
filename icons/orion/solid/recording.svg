@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Recording</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M50 20a2 2 0 0 0-2 2v2h-4V12a12 12 0 0 0-24 0v12h-4v-2a2 2 0 0 0-4 0v10a20 20 0 0 0 18 19.9V60h-8a2 2 0 0 0 0 4h20a2 2 0 0 0 0-4h-8v-8.1A20 20 0 0 0 52 32V22a2 2 0 0 0-2-2zM32 48a16 16 0 0 1-16-16v-4h32v4a16 16 0 0 1-16 16z"
+  fill="#202020"></path>
+  <path data-name="layer1" d="M40 32H20a12 12 0 0 0 24 0h-4z" fill="#202020"></path>
+</svg>

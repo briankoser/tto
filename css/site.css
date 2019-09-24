@@ -386,7 +386,8 @@ kbd kbd {
     margin-top: 3em;
 }
 
-.icon-demo-md {
+.icon-demo-md,
+.icon-demo-orion-solid {
     background-color: rgb(255, 83, 73);
     color: white;
 }
