@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Podcast</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M44 22.6a15.9 15.9 0 0 0 1-5.6c0-8.3-6.3-15-14-15S17 8.7 17 17a15.3 15.3 0 0 0 6.1 12.4A24.1 24.1 0 0 0 7 52h40"
+  fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+  <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+  stroke-width="2" d="M47 50v12m8 0H39m16-20a8 8 0 0 1-8 8 8 8 0 0 1-8-8V30a8 8 0 0 1 8-8 8 8 0 0 1 8 8z"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>
