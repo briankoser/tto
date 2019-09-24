@@ -372,9 +372,12 @@ kbd kbd {
     font-size: 24px;
 }
 
+.icon-demo ul {
+    list-style: none;
+}
+
 .icon-demo li {
     margin-bottom: 0.5em;
     display: flex;
     align-items: center;
 }
-
