@@ -358,26 +358,35 @@ kbd kbd {
 */
 .icon {
 	display: inline-block;
-	color: #333;
-    /* fill: currentColor; */
-    fill: rgb(255, 83, 73);
+	color: white;
+    fill: currentColor;
 	font-size: 24px;
 	height: 1em;
 	width: 1.3em;
 }
 
-.icon-demo {
+.icon-demo-container {
     width: 800px; 
     margin: auto;
     font-size: 24px;
 }
 
-.icon-demo ul {
+.icon-demo-container ul {
     list-style: none;
 }
 
-.icon-demo li {
+.icon-demo-container li {
     margin-bottom: 0.5em;
     display: flex;
     align-items: center;
+}
+
+.icon-demo {
+    padding: 1em;
+    margin-top: 3em;
+}
+
+.icon-demo-md {
+    background-color: rgb(255, 83, 73);
+    color: white;
 }
