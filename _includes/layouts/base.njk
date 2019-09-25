@@ -21,9 +21,12 @@
                     <li><a href="/episodes/">Episodes</a>
                     <li><a href="/subscribe/">Subscribe</a>
                     {# <li><a href="/about/">About</a> #}
-                    <li class="site-menu-non-link">Latest: {% episodeInline collections.episodes | last, metadata.cdn_url %}
-                    {# <li><a href="#">Recommended</a> #}
-                    <li><a href="/feed.rss">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a>
+                    <li>
+                        <div>
+                            <div>Latest: {% episodeInline collections.episodes | last, metadata.cdn_url %}</div>
+                            {# <div><a href="#">Recommended</a></div> #}
+                            <div><a href="/feed.rss">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a></div>
+                        </div>
             </nav>
         </header>
         <main>

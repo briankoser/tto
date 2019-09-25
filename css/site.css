@@ -150,8 +150,14 @@ body, .body {
     row-gap: 1.3rem;
 }
 
+body > header,
+body > header a {
+    color: white;
+}
+
 body > header {
     grid-area: header;
+    background-color: orangered;
 }
 
 body > main {
@@ -437,6 +443,10 @@ kbd kbd {
 /*
     SITE NAV
 */
+body > header a {
+    text-decoration: none;
+}
+
 .header-flex {
     display: flex;
     justify-content: space-between;
@@ -445,11 +455,11 @@ kbd kbd {
 }
 
 nav[role=navigation] {
-    -webkit-transition: all 0.3s ease-out;  
-       -moz-transition: all 0.3s ease-out;
-        -ms-transition: all 0.3s ease-out;
-         -o-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-in-out;  
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
 }
 
 .js nav[role=navigation] {
@@ -461,16 +471,15 @@ nav[role=navigation].active {
     max-height: 15em;
 }
 
-nav[role=navigation] ul {
+nav[role=navigation] ol {
     margin: 0;
     padding: 0;
-    border-top: 1px solid #808080;
 }
 
-nav[role=navigation] li a {
+nav[role=navigation] li > a,
+nav[role=navigation] li > div {
     display: block;
-    padding: 0.8em;
-    border-bottom: 1px solid #808080;
+    padding: 1em;
 }
   
 @media screen and (min-width: 48.25em) {
@@ -482,7 +491,7 @@ nav[role=navigation] li a {
         max-height: none;
     }
 
-    nav[role=navigation] ul {
+    nav[role=navigation] ol {
         margin: 0 0 0 -0.25em;
         border: 0;
     }
