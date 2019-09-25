@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Close Square</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  fill="#f66" d="M2 2h60v60H2z"></path>
+  <path data-name="opacity" fill="#000028" opacity=".15" d="M6 58V2H2v60h60v-4H6z"></path>
+  <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2" d="M2 2h60v60H2zm41.315 18.686L20.688 43.314m22.627 0L20.688 20.686"></path>
+</svg>
