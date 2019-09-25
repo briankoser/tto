@@ -385,7 +385,8 @@ kbd kbd {
 .icon-demo-md,
 .icon-demo-orion-solid,
 .icon-demo-orion-line,
-.icon-demo-icons8-windows {
+.icon-demo-icons8-windows,
+.icon-demo-icons8-cute-outline {
     background-color: rgb(255, 83, 73);
     color: white;
 }
