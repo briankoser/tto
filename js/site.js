@@ -1,12 +1,12 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    /* TABS */
-    let tabs = document.querySelectorAll('.tab');
-    Array.from(tabs).forEach(tab => {
-        tab.addEventListener('click', clickEvent => {
-            clickEvent.preventDefault();
-            clickEvent.target.classList.toggle('active');
-            clickEvent.target.parentElement.querySelector('.panel').classList.toggle('active');
-        });
+    /* SITE NAV */
+    document.querySelector('body').classList.add('js');
+    let menu = document.querySelector('#site-menu');
+    let menuLink = document.querySelector('#site-menu-link');
+    menuLink.addEventListener('click', clickEvent => {
+        console.log('koser')
+        menu.classList.toggle('active');
+        return false;
     });
 
 
@@ -42,4 +42,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
         button.classList.remove("playing");
         button.innerText = 'Play';
     }
+
+
+
+    /* TABS */
+    let tabs = document.querySelectorAll('.tab');
+    Array.from(tabs).forEach(tab => {
+        tab.addEventListener('click', clickEvent => {
+            clickEvent.preventDefault();
+            clickEvent.target.classList.toggle('active');
+            clickEvent.target.parentElement.querySelector('.panel').classList.toggle('active');
+        });
+    });
 });

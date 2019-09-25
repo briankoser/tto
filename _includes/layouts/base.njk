@@ -10,15 +10,22 @@
         <link rel="stylesheet" href="/css/site.css" />
     </head>
     <body>
-        <header>logo</header>
-        <nav>
-            <ol>
-                <li><a href="/episodes/">Episodes</a>
-                <li><a href="/subscribe/">Subscribe</a>
-                <li>Latest: {% episodeInline collections.episodes | last, metadata.cdn_url %}
-                {# <li><a href="#">Recommended</a> #}
-                <li><a href="/feed.rss">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a>
-        </nav>
+        <header>
+            <div class="header-flex">
+                <img alt="logo">
+                <a id="site-menu-link" href="#site-menu">☰ Menu</a>
+            </div>
+            <nav id="site-menu" role="navigation">
+                <ol>
+                    <li><a href="/">Home</a>
+                    <li><a href="/episodes/">Episodes</a>
+                    <li><a href="/subscribe/">Subscribe</a>
+                    {# <li><a href="/about/">About</a> #}
+                    <li class="site-menu-non-link">Latest: {% episodeInline collections.episodes | last, metadata.cdn_url %}
+                    {# <li><a href="#">Recommended</a> #}
+                    <li><a href="/feed.rss">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a>
+            </nav>
+        </header>
         <main>
             {{ content | safe }}
         </main>
