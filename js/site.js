@@ -1,10 +1,12 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     /* SITE NAV */
     document.querySelector('body').classList.add('js');
-    let menu = document.querySelector('#site-nav');
+    let siteNavPanes = document.querySelectorAll('.js-site-nav');
     let menuLink = document.querySelector('#site-nav-link');
     menuLink.addEventListener('click', clickEvent => {
-        menu.classList.toggle('active');
+        Array.from(siteNavPanes).forEach(pane => {
+            pane.classList.toggle('active');
+        });
         return false;
     });
 

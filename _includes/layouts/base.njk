@@ -10,21 +10,26 @@
         <link rel="stylesheet" href="/css/site.css" />
     </head>
     <body>
-        <header class="site-header">
+        <header class="site-header js-site-nav">
             <div class="header-flex">
                 <img alt="logo">
                 <a id="site-nav-link" href="#site-nav">☰ Menu</a>
             </div>
-            <nav id="site-nav" class="site-nav" role="navigation">
+            <nav id="site-nav" class="site-nav js-site-nav">
                 <ol>
                     <li><a href="/">Home</a>
                     <li><a href="/episodes/">Episodes</a>
+                    <li><a href="/about/">About</a>
                     <li><a href="/subscribe/">Subscribe</a>
                     {# <li><a href="/about/">About</a> #}
                     <li class="episode-info">
                         {% episodeBlock collections.episodes | last, metadata.cdn_url %}
                         {# <div><a href="#">Recommended</a></div> #}
-                        <div><a href="/feed.rss">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a></div>
+                    <li>
+                        <div class="site-nav-footer">
+                            <a href="/feed.rss">RSS</a>
+                            <a href="mailto:tto@koser.us">tto@koser.us</a>
+                        </div>
                 </ol>
             </nav>
         </header>

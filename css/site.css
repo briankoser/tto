@@ -148,7 +148,7 @@ body, .body {
         "header         header  header" 
         "gutter-left    main    gutter-right" 
         "footer         footer  footer";
-    row-gap: 1.3rem;
+    row-gap: 2rem;
 }
 
 p,
@@ -353,6 +353,44 @@ kbd kbd {
 
 
 
+
+/*
+    HELPER CLASSES
+*/
+.hidden {
+  display: none !important
+}
+
+.invisible {
+  visibility: hidden
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+
+.visuallyhidden.focusable:active, 
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto
+}
+
+
+
+
+
+
 /*
     ICONS
 */
@@ -430,6 +468,10 @@ kbd kbd {
     padding: 1em 0;
 }
 
+.site-header.active {
+    padding: 1em 0 0 0;
+}
+
 .site-header a {
     text-decoration: none;
 }
@@ -472,7 +514,7 @@ kbd kbd {
 }
 
 .site-nav.active {
-    max-height: 20em;
+    max-height: 26em;
 }
 
 .site-nav ol {
@@ -481,9 +523,10 @@ kbd kbd {
 }
 
 
-.site-nav li > a {
+.site-nav li > a,
+.site-nav .site-nav-footer a {
     display: block;
-    padding: 2em 1em;
+    padding: 1em;
 }
 
 .site-nav .episode-info {
@@ -491,8 +534,9 @@ kbd kbd {
     padding: 1em;
 }
 
-.site-nav .episode-info {
-    font-size: 16px;
+.site-nav .site-nav-footer {
+    display: flex;
+    justify-content: space-evenly;
 }
   
 @media screen and (min-width: 48.25em) {
@@ -517,4 +561,48 @@ kbd kbd {
     .site-nav li a {
         border: 0;
     }
+}
+
+
+
+
+
+
+/*
+    EPISODE BLOCK
+*/
+.episode-block {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-areas: 
+        "empty    latest" 
+        "control  episode";
+    row-gap: 5px;
+    column-gap: 5px;
+}
+  
+.episode-block .latest {
+    grid-area: latest;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.episode-block .play,
+.episode-block .pause {
+    cursor: pointer;
+    grid-area: control;
+}
+
+.episode-block .episode {
+    grid-area: episode;
+    margin-left: -2.5px;
+    
+    display: flex;
+    align-items: baseline;
+}
+
+.episode-block .number {
+    font-size: 40px;
+    line-height: 0.8em;
+    margin-right: 0.2em;
 }
