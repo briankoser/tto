@@ -124,7 +124,7 @@
     blockquote, figure, figcaption, address, summary, details, div
 */
 html, .root {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
   
 *,
@@ -135,11 +135,12 @@ html, .root {
 
 body, .body {
     font-family: Concourse, OpenSansNumero, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 20px;
+    line-height: 1.5rem;
+    color: rgb(38, 38, 38);
     margin-bottom: 0;
     font-variant-ligatures: common-ligatures;
-    font-variant-numeric: oldstyle-nums;
+    width: 100%; /* see if this fixes too wide screen on mobile*/
 
     display: grid;
     grid-template-columns: .5rem 1fr .5rem;
@@ -148,24 +149,6 @@ body, .body {
         "gutter-left    main    gutter-right" 
         "footer         footer  footer";
     row-gap: 1.3rem;
-}
-
-body > header,
-body > header a {
-    color: white;
-}
-
-body > header {
-    grid-area: header;
-    background-color: orangered;
-}
-
-body > main {
-    grid-area: main;
-}
-
-body > footer {
-    grid-area: footer;
 }
 
 p,
@@ -187,15 +170,6 @@ figure {
     HEADINGS
     hgroup, h1, h2, h3, h4, h5, h6
 */
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-variant-numeric: lining-nums; 
-}
-
 h1:first-child,
 h2:first-child,
 h3:first-child,
@@ -251,8 +225,8 @@ h6, .h6 {
     optgroup, option, datalist, textarea, output
 */
 button {
-    background: black;
-    border: 1px solid black;
+    background: orangered;
+    border: 1px solid orangered;
     border-radius: 1em;
     color: white;
     cursor: pointer;
@@ -267,7 +241,7 @@ button {
 button:hover,
 button:focus {
   background-color: white;
-  color: black; 
+  color: rgb(38, 38, 38);
 }
 
 
@@ -334,7 +308,7 @@ code {
 
 /* todo: https://codepen.io/ghepting/pen/tLnHK/ */
 a {
-  color: black;
+  color: rgb(38, 38, 38);
   white-space: nowrap; 
 }
 
@@ -364,13 +338,13 @@ kbd kbd {
     hr, ::selection
 */
 ::-moz-selection {
-    background: black;
+    background: rgb(38, 38, 38);
     color: white;
     text-shadow: none; 
 }
 
 ::selection {
-    background-color: black;
+    background-color: rgb(38, 38, 38);
     color: white;
     text-shadow: none; 
 }
@@ -441,9 +415,22 @@ kbd kbd {
 
 
 /*
-    SITE NAV
+    SITE LAYOUT
 */
-body > header a {
+.site-header,
+.site-header a,
+.site-footer,
+.site-footer a {
+    color: white;
+}
+
+.site-header {
+    grid-area: header;
+    background-color: orangered;
+    padding: 1em 0;
+}
+
+.site-header a {
     text-decoration: none;
 }
 
@@ -454,7 +441,24 @@ body > header a {
     padding: 1em;
 }
 
-nav[role=navigation] {
+.site-main {
+    grid-area: main;
+}
+
+.site-footer {
+    grid-area: footer;
+    background-color: rgb(38, 38, 38);
+}
+
+
+
+
+
+
+/*
+    SITE NAV
+*/
+.site-nav {
     -webkit-transition: all 0.3s ease-in-out;  
        -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
@@ -462,24 +466,33 @@ nav[role=navigation] {
             transition: all 0.3s ease-in-out;
 }
 
-.js nav[role=navigation] {
+.js .site-nav {
     overflow: hidden;
     max-height: 0;
 }
 
-nav[role=navigation].active {
-    max-height: 15em;
+.site-nav.active {
+    max-height: 20em;
 }
 
-nav[role=navigation] ol {
+.site-nav ol {
     margin: 0;
     padding: 0;
 }
 
-nav[role=navigation] li > a,
-nav[role=navigation] li > div {
+
+.site-nav li > a {
     display: block;
+    padding: 2em 1em;
+}
+
+.site-nav .episode-info {
+    background-color: rgb(38, 38, 38);
     padding: 1em;
+}
+
+.site-nav .episode-info {
+    font-size: 16px;
 }
   
 @media screen and (min-width: 48.25em) {
@@ -487,21 +500,21 @@ nav[role=navigation] li > div {
         display: none;
     }
 
-    .js nav[role=navigation] {
+    .js .site-nav {
         max-height: none;
     }
 
-    nav[role=navigation] ol {
+    .site-nav ol {
         margin: 0 0 0 -0.25em;
         border: 0;
     }
     
-    nav[role=navigation]  li {
+    .site-nav  li {
         display: inline-block;
         margin: 0 0.25em;
     }
 
-    nav[role=navigation] li a {
+    .site-nav li a {
         border: 0;
     }
 }

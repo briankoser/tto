@@ -10,29 +10,28 @@
         <link rel="stylesheet" href="/css/site.css" />
     </head>
     <body>
-        <header>
+        <header class="site-header">
             <div class="header-flex">
                 <img alt="logo">
-                <a id="site-menu-link" href="#site-menu">☰ Menu</a>
+                <a id="site-nav-link" href="#site-nav">☰ Menu</a>
             </div>
-            <nav id="site-menu" role="navigation">
+            <nav id="site-nav" class="site-nav" role="navigation">
                 <ol>
                     <li><a href="/">Home</a>
                     <li><a href="/episodes/">Episodes</a>
                     <li><a href="/subscribe/">Subscribe</a>
                     {# <li><a href="/about/">About</a> #}
-                    <li>
-                        <div>
-                            <div>Latest: {% episodeInline collections.episodes | last, metadata.cdn_url %}</div>
-                            {# <div><a href="#">Recommended</a></div> #}
-                            <div><a href="/feed.rss">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a></div>
-                        </div>
+                    <li class="episode-info">
+                        {% episodeBlock collections.episodes | last, metadata.cdn_url %}
+                        {# <div><a href="#">Recommended</a></div> #}
+                        <div><a href="/feed.rss">RSS</a> · <a href="mailto:tto@koser.us">tto@koser.us</a></div>
+                </ol>
             </nav>
         </header>
-        <main>
+        <main class="site-main">
             {{ content | safe }}
         </main>
-        <footer>
+        <footer class="site-footer">
             <ol>
                 <li>[icon] Podcast by <a class="h-card" href="http://koser.us/melissa">Melissa</a> and <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
                 <li>[icon] Website by <a class="h-card" href="http://koser.us/brian">Brian Koser</a>

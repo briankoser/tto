@@ -1,10 +1,9 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     /* SITE NAV */
     document.querySelector('body').classList.add('js');
-    let menu = document.querySelector('#site-menu');
-    let menuLink = document.querySelector('#site-menu-link');
+    let menu = document.querySelector('#site-nav');
+    let menuLink = document.querySelector('#site-nav-link');
     menuLink.addEventListener('click', clickEvent => {
-        console.log('koser')
         menu.classList.toggle('active');
         return false;
     });
