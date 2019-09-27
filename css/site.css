@@ -577,13 +577,12 @@ kbd kbd {
     grid-template-areas: 
         "empty    latest" 
         "control  episode";
-    row-gap: 5px;
     column-gap: 5px;
 }
   
 .episode-block .latest {
     grid-area: latest;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
