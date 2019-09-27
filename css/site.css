@@ -587,8 +587,7 @@ kbd kbd {
     text-transform: uppercase;
 }
 
-.episode-block .play,
-.episode-block .pause {
+.episode-block .media-buttons {
     cursor: pointer;
     grid-area: control;
 }

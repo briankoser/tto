@@ -1,4 +1,9 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    let hide = element => element.classList.add('hidden');
+    let show = element => element.classList.remove('hidden');
+
+
+
     /* SITE NAV */
     document.querySelector('body').classList.add('js');
     let siteNavPanes = document.querySelectorAll('.js-site-nav');
@@ -12,37 +17,38 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-    /* INLINE AUDIO */
-    let playButtons = document.querySelectorAll(".js-episode-inline button");
-    Array.from(playButtons).forEach(playButton => {
-        playButton.addEventListener('click', clickEvent => {
-            let audio = clickEvent.target.parentElement.querySelector('audio');
-            let button = clickEvent.target;
-
-            if (audio.paused) {
-                playAudio(audio, button);
-            } else {
-                pauseAudio(audio, button);
-            }
-        });
-    });
-
-    async function playAudio(audio, button) {
+    /* AUDIO */
+    async function playAudio(audio, buttons) {
         try {
             await audio.play();
-            button.classList.add("playing");
-            button.innerText = 'Pause';
+            hide(buttons.querySelector('.play'));
+            show(buttons.querySelector('.pause'));
         } catch(err) {
-            button.classList.remove("playing");
-            button.innerText = 'Play';
+            show(buttons.querySelector('.play'));
         }
     }
 
-    async function pauseAudio(audio, button) {
+    async function pauseAudio(audio, buttons) {
         await audio.pause();
-        button.classList.remove("playing");
-        button.innerText = 'Play';
+        hide(buttons.querySelector('.pause'));
+        show(buttons.querySelector('.play'));
     }
+
+    let activateAudioButton = clickEvent => {
+        let audio = clickEvent.target.closest('.episode').querySelector('audio');
+        let buttons = clickEvent.target.closest('.js-media-buttons');
+
+        if (audio.paused) {
+            playAudio(audio, buttons);
+        } else {
+            pauseAudio(audio, buttons);
+        }
+    };
+
+    let blockMediaButtons = document.querySelectorAll(".js-media-buttons");
+    let inlinePlayButtons = document.querySelectorAll(".js-episode-inline button");
+    Array.from(blockMediaButtons).forEach(button => button.addEventListener('click', activateAudioButton));
+    Array.from(inlinePlayButtons).forEach(button => button.addEventListener('click', activateAudioButton));
 
 
 
