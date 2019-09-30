@@ -489,7 +489,12 @@ kbd kbd {
 
 .site-footer {
     grid-area: footer;
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(70, 70, 70);
+    padding: 2em 1em;
+}
+
+.site-footer ol {
+    list-style: none;
 }
 
 
