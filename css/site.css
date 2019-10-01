@@ -227,7 +227,7 @@ h6, .h6 {
 button {
     background: orangered;
     border: 1px solid orangered;
-    border-radius: 1em;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
     display: inline-block;
@@ -284,6 +284,12 @@ img {
     height: auto;
     max-width: 96vw;
     width: auto; 
+}
+
+audio {
+    background-color: orangered;
+    border-radius: 10px;
+    width: 100%;
 }
 
 
@@ -489,7 +495,12 @@ kbd kbd {
 
 .site-footer {
     grid-area: footer;
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(70, 70, 70);
+    padding: 2em 1em;
+}
+
+.site-footer ol {
+    list-style: none;
 }
 
 
@@ -569,7 +580,7 @@ kbd kbd {
 
 
 /*
-    EPISODE BLOCK
+    EPISODE BLOCK, EPISODE CARD
 */
 .episode-block {
     display: grid;
@@ -591,15 +602,19 @@ kbd kbd {
     grid-area: control;
 }
 
-.episode-block .episode {
-    grid-area: episode;
-    margin-left: -2.5px;
-    
+.episode-block .episode,
+.episode-card .episode {
     display: flex;
     align-items: baseline;
 }
 
-.episode-block .number {
+.episode-block .episode {
+    grid-area: episode;
+    margin-left: -2.5px;
+}
+
+.episode-block .number,
+.episode-card .number {
     font-size: 40px;
     line-height: 0.8em;
     margin-right: 0.2em;

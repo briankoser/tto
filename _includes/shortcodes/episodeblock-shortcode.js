@@ -1,6 +1,6 @@
 module.exports = function episodeBlockShortCode (episode, cdnUrl) {
     return `
-<div class="episode episode-block js-episode-block">
+<div class="episode-block js-episode-block">
     <audio src="${cdnUrl}/${episode.fileSlug}.mp3" preload="none"></audio>
     <div class="latest">Latest</div>
     <div class="media-buttons js-media-buttons">
