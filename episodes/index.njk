@@ -2,9 +2,13 @@
 layout: base
 ---
 <h1>Episodes</h1>
+<div class="episode-list">
 {%- for episode in collections.episodes | reverse -%}
-    <div class="h-entry">
-        <a href="{{ episode.url }}" class="p-name">№ {{ episode.data.number }} {{ episode.data.title }}</a>
-        <time class="dt-published" datetime='{{ episode.date }}'>{{ episode.date | readableDate }}</time>
-    </div>
+    <article class="h-entry">
+        <h2><a href="{{ episode.url }}" class="p-name">№ {{ episode.data.number }} {{ episode.data.title }}</a></h2>
+        <p>
+            <time class="dt-published" datetime='{{ episode.date }}'>{{ episode.date | readableDate }}</time> · {{ episode.data.description }}
+        </p>
+    </article>
 {%- endfor -%}
+</div>
