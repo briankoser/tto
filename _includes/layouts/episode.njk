@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<article class="h-entry">
+<article class="post h-entry">
     <header>
         <h1 class="post-title p-name">№ {{ number }} {{ title }}</h1>
         <time class="post-date dt-published" datetime='{{ date }}'>{{ date | readableDate }}</time>
@@ -33,14 +33,17 @@ layout: base
         </p>
     </div>
     
-    {# <footer>
+    <footer>
         <nav>
-            {% if page.previous %}
-                <a rel="prev" href="{{ page.previous.url }}">« № {{ page.previous.number }} {{ page.previous.title }}</a>
+            {% set previousItem = collections.episodes[number - 2] %}
+            {% set nextItem = collections.episodes[number] %}
+
+            {% if previousItem %}
+                <div class="previous"><a rel="prev" href="{{ previousItem.url }}" >« [i] № {{ previousItem.data.number }} {{ previousItem.data.title }}</a></div>
             {% endif %}
-            {% if page.next %}
-                <a rel="next" href="{{ page.next.url }}">№ {{ page.next.number }} {{ page.next.title }} »</a>
+            {% if nextItem %}
+                <div class="next"><a rel="next" href="{{ nextItem.url }}" >№ {{ nextItem.data.number }} {{ nextItem.data.title }} [i] »</a></div>
             {% endif %}
         </nav>
-    </footer> #}
+    </footer>
 </article>

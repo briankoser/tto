@@ -619,3 +619,23 @@ kbd kbd {
     line-height: 0.8em;
     margin-right: 0.2em;
 }
+
+
+
+
+
+
+/*
+    EPISODE POST
+*/
+.post nav {
+    font-size: 14px;
+}
+
+.post .previous {
+    float: left;
+}
+
+.post .next {
+    float: right;
+}
