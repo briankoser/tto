@@ -11,10 +11,10 @@ layout: base
         <audio src="{{ metadata.cdn_url }}/{{ page.fileSlug }}.mp3" preload="metadata" controls>
         </audio>
         
-        <p>{{ description }}</p>
+        <p class="description">{{ description }}</p>
 
         <details class="spoilers">
-            <summary>Expand for show notes. Spoilers!</summary>
+            <summary>Show Notes (expand)</summary>
             {{ content | safe }}
 
             {% if notes %}
@@ -28,9 +28,8 @@ layout: base
         </details>
     
         <h2>Feedback</h2>
-        <p class="contact">
-            Email us <a href="mailto:tto@koser.us">tto@koser.us</a> or comment below
-        </p>
+        <p>[i] Email <a href="mailto:tto@koser.us">tto@koser.us</a></p>         
+        <div class="comments">implement comments here</p>
     </div>
     
     <footer>

@@ -153,7 +153,7 @@ html, .root {
 body, .body {
     font-family: Concourse, OpenSansNumero, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.4;
     color: var(--color-black);
     margin-bottom: 0;
     font-variant-ligatures: common-ligatures;
@@ -165,7 +165,7 @@ body, .body {
         "header         header  header" 
         "gutter-left    main    gutter-right" 
         "footer         footer  footer";
-    row-gap: 2rem;
+    row-gap: 2.6rem;
 }
 
 p,
@@ -205,22 +205,24 @@ h1, .h1 {
   font-size: 1.95313rem;
   line-height: 1.95rem;
   margin-top: 2.6rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 0;
+  /* margin-bottom: 1.3rem; */
   letter-spacing: -0.03em; 
 }
 
 h2, .h2 {
   font-size: 1.5625rem;
   line-height: 1.95rem;
-  margin-top: 1.3rem;
-  margin-bottom: 1.3rem; 
+  margin-top: 2.6rem;
+  margin-bottom: 0;
+  /* margin-bottom: 1.3rem;  */
 }
 
 h3, .h3,
 h4, .h4 {
   font-size: 1.25rem;
   line-height: 1.3rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   font-weight: normal; 
 }
 
@@ -228,7 +230,7 @@ h5, .h5,
 h6, .h6 {
   font-size: 1rem;
   line-height: 1.3rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   font-weight: normal; 
 }
 
@@ -274,14 +276,14 @@ button:focus {
 ul,
 ol {
   list-style-position: outside;
-  padding-left: 0; 
+  padding-left: 1em; 
 }
 
 ul ul,
 ol ol,
 ul ol,
 ol ul {
-  margin: 0 0 0 1rem; 
+  margin: 0 0 0 1.3rem; 
 }
 
 ul.horizontal li {
@@ -362,13 +364,13 @@ kbd kbd {
     hr, ::selection
 */
 ::-moz-selection {
-    background: var(--color-black);
+    background: var(--color-primary);
     color: var(--color-white);
     text-shadow: none; 
 }
 
 ::selection {
-    background-color: var(--color-black);
+    background-color: var(--color-primary);
     color: var(--color-white);
     text-shadow: none; 
 }
@@ -435,8 +437,8 @@ kbd kbd {
 }
 
 .icon-demo {
-    padding: 1em;
-    margin-top: 3em;
+    padding: 1.3em;
+    margin-top: 2.6em;
 }
 
 .icon-demo img {
@@ -504,7 +506,7 @@ kbd kbd {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 1.3em;
 }
 
 .site-main {
@@ -555,12 +557,12 @@ kbd kbd {
 .site-nav li > a,
 .site-nav .site-nav-footer a {
     display: block;
-    padding: 1em;
+    padding: 1.3em;
 }
 
 .site-nav .episode-info {
     background-color: var(--color-black);
-    padding: 1em;
+    padding: 1.3em;
 }
 
 .site-nav .site-nav-footer {
@@ -650,6 +652,12 @@ kbd kbd {
     font-size: 14px;
 }
 
+.post audio,
+.post .description,
+.post .spoilers {
+    margin-top: 2.6rem;
+}
+
 .post .previous {
     float: left;
 }
@@ -658,6 +666,43 @@ kbd kbd {
     float: right;
 }
 
+.post .spoilers,
+.post .spoilers a {
+    color: var(--color-white);
+}
+
+.post .spoilers {
+    background-color: var(--color-black);
+    padding-left: 1em;
+}
+
+.post .spoilers h2 {
+    margin-left: -0.7rem;
+}
+
+.post .spoilers summary {
+    background-color: var(--color-primary);
+    list-style-image: url(/icons/orion/color/play.svg);
+    padding: 1em 0;
+    margin-left: -1em;
+}
+
+.post details[open].spoilers summary {
+    list-style-image: url(/icons/orion/color/pause.svg);
+}
+
+.post .spoilers summary::-webkit-details-marker {
+    background: url(/icons/orion/color/play.svg);
+    color: transparent;
+}
+
+.post details[open].spoilers summary::-webkit-details-marker {
+    background: url(/icons/orion/color/pause.svg);
+}
+
+.post footer {
+    margin-top: 3.9rem;
+}
 
 
 
