@@ -681,13 +681,20 @@ kbd kbd {
 }
 
 .post .spoilers summary {
-    background-color: var(--color-primary);
+    background-color: var(--color-dark-grey);
     list-style-image: url(/icons/orion/color/play.svg);
     padding: 1em 0;
     margin-left: -1em;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;  
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
 }
 
 .post details[open].spoilers summary {
+    background-color: var(--color-primary);
     list-style-image: url(/icons/orion/color/pause.svg);
 }
 
