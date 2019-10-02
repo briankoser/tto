@@ -606,13 +606,13 @@ kbd kbd {
     display: grid;
     grid-template-columns: max-content auto;
     grid-template-areas: 
-        "empty    latest" 
+        "empty    heading" 
         "control  episode";
     column-gap: 5px;
 }
   
-.episode-block .latest {
-    grid-area: latest;
+.episode-block .heading {
+    grid-area: heading;
     font-size: 14px;
     text-transform: uppercase;
 }
