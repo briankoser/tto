@@ -486,6 +486,11 @@ kbd kbd {
 .site-footer,
 .site-footer a {
     color: var(--color-white);
+    text-decoration: none;
+}
+
+.site-header a:hover {
+    background-color: var(--color-dark-grey);
 }
 
 .site-header {
@@ -496,10 +501,6 @@ kbd kbd {
 
 .site-header.active {
     padding: 1em 0 0 0;
-}
-
-.site-header a {
-    text-decoration: none;
 }
 
 .header-flex {
@@ -517,6 +518,10 @@ kbd kbd {
     grid-area: footer;
     background-color: var(--color-dark-grey);
     padding: 2em 1em;
+}
+
+.site-footer a:hover {
+    background-color: var(--color-primary);
 }
 
 .site-footer ol {
@@ -600,6 +605,18 @@ kbd kbd {
 
 
 /*
+    HOME
+*/
+.home-episodes {
+    margin-top: 2.6rem;
+}
+
+
+
+
+
+
+/*
     EPISODE BLOCK, EPISODE CARD
 */
 .episode-block {
@@ -622,8 +639,7 @@ kbd kbd {
     grid-area: control;
 }
 
-.episode-block .episode,
-.episode-card .episode {
+.episode-block .episode {
     display: flex;
     align-items: baseline;
 }
@@ -634,10 +650,27 @@ kbd kbd {
 }
 
 .episode-block .number,
-.episode-card .number {
+.episode-card .title {
     font-size: 40px;
     line-height: 0.8em;
     margin-right: 0.2em;
+}
+
+.episode-card header,
+.episode-card .summary {
+    margin-top: 0.65rem;
+}
+
+.episode-card .title {
+    display: block;
+}
+
+.episode-card a {
+    text-decoration: none;
+}
+
+.episode-card a:hover {
+    background-color: var(--color-primary);
 }
 
 
