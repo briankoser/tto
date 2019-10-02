@@ -1,5 +1,16 @@
 ---
 layout: base
+brian:
+    - <a href="https://koser.us/brian">Personal website</a>
+    - I am compelled to rank everything. And I like to talk.
+    - "Favorite episode: <a href='/episodes/003-podcasts'>№ 3 Podcats</a>"
+melissa:
+    - <a href="https://koser.us/melissa">Personal website</a>
+    - about melissa
+    - "Favorite episode: <a href='/episodes/002-musicals'>№ 2 Musicals</a>"
 ---
-<a class="h-card" href="http://koser.us/melissa">Melissa Koser</a>
-<a class="h-card" href="http://koser.us/brian">Brian Koser</a>
+<h1>About</h1>
+<div class="about">
+    {% list "Melissa", melissa %}
+    {% list "Brian", brian %}
+</div>
