@@ -21,15 +21,15 @@
                     <li><a href="/episodes/">[i] Episodes</a>
                     <li><a href="/about/">[i] About</a>
                     <li><a href="/subscribe/">[i] Subscribe</a>
-                    {# <li><a href="/about/">About</a> #}
-                    <li class="episode-info">
-                        {% episodeBlock collections.episodes | last, "Latest", metadata.cdn_url %}
-                        {# <div><a href="#">Recommended</a></div> #}
-                    <li>
-                        <div class="site-nav-footer">
-                            <a href="/feed.rss">[i] RSS</a>
-                            <a href="mailto:tto@koser.us">[i] tto@koser.us</a>
-                        </div>
+                </ol>
+                <div class="site-nav-episodes">
+                    {% episodeBlock collections.episodes | last, "Latest", metadata.cdn_url %}
+                    {# <div><a href="#">Recommended</a></div> #}
+                </div>
+                <div class="site-nav-footer">
+                    <a href="/feed.rss">[i] RSS</a>
+                    <a href="mailto:tto@koser.us">[i] tto@koser.us</a>
+                </div>
                 </ol>
             </nav>
         </header>

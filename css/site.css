@@ -569,7 +569,7 @@ kbd kbd {
     padding: 1.3em;
 }
 
-.site-nav .episode-info {
+.site-nav .site-nav-episodes {
     background-color: var(--color-black);
     padding: 1.3em;
 }
@@ -808,14 +808,6 @@ kbd kbd {
         max-height: none;
     }
 
-    .site-nav ol {
-        border: 0;
-    }
-
-    .site-nav li a {
-        border: 0;
-    }
-
     .site-nav .episode-info,
     .site-nav .site-nav-footer {
         margin-top: 1.3em;
@@ -823,10 +815,18 @@ kbd kbd {
 
 
 
+    /*
+        HOME PAGE
+    */
     .headline {
         font-size: 1.5em;
     }
 
+
+
+    /*
+        EPISODE CARDS, EPISODE BLOCKS
+    */
     .episode-block {
         column-gap: 10px;
         row-gap: 10px;
