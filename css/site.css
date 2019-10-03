@@ -763,6 +763,72 @@ kbd kbd {
 
 
 /*
+    SUBSCRIBE
+*/
+.subscribe-urls {
+    list-style: none;
+}
+
+.accordion li {
+    margin-top: 3em;
+}
+
+.tab {
+    cursor: pointer;
+    position: relative;
+    margin-top: 0;
+    padding: 1em;
+}
+
+.panel + .tab {
+    margin-top: 2.6rem;
+}
+
+.tab:after {
+    content: '[i] +';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.tab.active {
+    background: rgba(0,0,0,0.3);
+}
+
+.tab.active:after {
+    content: '[i] -'; 
+}
+
+.panel { 
+    overflow: hidden;
+}
+
+.js .panel {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.js .panel.active {
+    max-height: 260em;
+}
+
+.panel p {
+    padding: 1em;
+}
+
+.panel p:last-child {
+    margin: 0; 
+}
+
+
+
+
+
+
+/*
     DESKTOP STYLES
 */
 @media screen and (min-width: 48.25em) {
