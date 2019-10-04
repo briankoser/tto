@@ -1,8 +1,8 @@
-module.exports = function episodeCardShortCode (episode, readableDate, cdnUrl) {
+module.exports = function episodeCardShortCode (episode, readableDate) {
     return `
 <article class="episode episode-card h-entry">
     <header class="episode">
-        <a href="${cdnUrl}/${episode.url}">
+        <a href="${episode.url}">
             <div class="number">№ ${episode.data.number}</div>
             <div class="title">${episode.data.title}</div>
         </a>

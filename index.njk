@@ -7,7 +7,7 @@ layout: base
 <div class="home-episodes">
     <div class="section">
         <h2>Latest</h2>
-        {% episodeCard collections.episodes | last, collections.episodes | last | episodeReadableDate, metadata.cdn_url %}
+        {% episodeCard collections.episodes | last, collections.episodes | last | episodeReadableDate, metadata.site_url %}
     </div>
 
     {# <div class="section">
