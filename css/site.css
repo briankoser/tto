@@ -650,6 +650,10 @@ kbd kbd {
     background-color: var(--color-primary);
 }
 
+.episode-card .title {
+    white-space: pre-wrap;
+}
+
 
 
 
