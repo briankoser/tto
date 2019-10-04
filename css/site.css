@@ -664,7 +664,8 @@ kbd kbd {
 
 .post audio,
 .post .description,
-.post .spoilers {
+.post .spoilers,
+.post .feedback {
     margin-top: 2.6rem;
 }
 
