@@ -1,15 +1,19 @@
 ---
 layout: base
 brian:
-    - <a href="https://koser.us/brian">Personal website</a>
-    - I am compelled to rank everything. And I like to talk.
-    - "Favorite episode: <a href='/episodes/003-podcasts'>№ 3 Podcats</a>"
-    - "Favorite punctuation mark: ?"
-    - "Favorite emoji: ⚗️"
+    host: Brian
+    list:
+        - <a href="https://koser.us/brian">Personal website</a>
+        - I am compelled to rank everything. And I like to talk.
+        - "Favorite episode: <a href='/episodes/003-podcasts'>№ 3 Podcats</a>"
+        - "Favorite punctuation mark: ?"
+        - "Favorite emoji: ⚗️"
 melissa:
-    - <a href="https://koser.us/melissa">Personal website</a>
-    - about melissa
-    - "Favorite episode: <a href='/episodes/002-musicals'>№ 2 Musicals</a>"
+    host: Melissa
+    list:
+        - <a href="https://koser.us/melissa">Personal website</a>
+        - about melissa
+        - "Favorite episode: <a href='/episodes/002-musicals'>№ 2 Musicals</a>"
 ---
 <h1>About</h1>
 
@@ -17,6 +21,6 @@ melissa:
 Desktop: same, but left side is Melissa, right half is Brian #}
 
 <div class="about">
-    {% list "Melissa", melissa %}
-    {% list "Brian", brian %}
+    {% list melissa %}
+    {% list brian %}
 </div>

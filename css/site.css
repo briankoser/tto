@@ -666,11 +666,9 @@ kbd kbd {
     font-size: 0.75em;
 }
 
-.post audio,
-.post .description,
 .post .spoilers,
 .post .feedback {
-    margin-top: 2.6rem;
+    margin-top: 5.2rem;
 }
 
 .post .previous {
@@ -720,6 +718,23 @@ kbd kbd {
 
 .post details[open].spoilers summary::-webkit-details-marker {
     background: url(/icons/orion/color/pause.svg);
+}
+
+.post audio,
+.post .description {
+    margin-top: 2.6rem;
+}
+
+.post .spoilers summary + ol {
+    margin-top: 2.6rem;
+}
+
+.post .spoilers .video-embed {
+    margin-top: 1.3rem;
+}
+
+.post .spoilers .youtubelist li {
+    margin-top: 2.6rem;
 }
 
 .post footer {
@@ -915,15 +930,5 @@ kbd kbd {
 
     .episode-card .summary {
         margin-top: 0;
-    }
-
-
-
-    /*
-        POST
-    */
-    .post .spoilers,
-    .post .feedback {
-        margin-top: 5.2rem;
     }
 }

@@ -10,29 +10,33 @@ hosts:
 bytes: 16643378
 duration: '0:34:40'
 tags: ['episodes', 'movies', 'musicals']
-list_brian:
-  - {"title": "Seven Brides for Seven Brothers", "slug": "seven-brides-for-seven-brothers"}
-  - {"title": "The Music Man", "slug": "the-music-man"}
-  - {"title": "Singin’ in the Rain", "slug": "singin-in-the-rain"}
-  - {"title": "Yankee Doodle Dandy", "slug": "yankee-doodle-dandy"}
-  - {"title": "The Sound of Music", "slug": "the-sound-of-music"}
-  - {"title": "In the Good Old Summertime", "slug": "in-the-good-old-summertime"}
-  - {"title": "Mary Poppins", "slug": "mary-poppins"}
-  - {"title": "The Phantom of the Opera", "slug": "the-phantom-of-the-opera-2004"}
-  - {"title": "Muppet Treasure Island", "slug": "muppet-treasure-island"}
-  - {"title": "Fiddler on the Roof", "slug": "fiddler-on-the-roof"}
-list_melissa: 
-  - {"title": "Hello, Dolly!", "slug": "hello-dolly", "replaced": "How the Grinch Stole Christmas"}
-  - {"title": "Road to Utopia", "slug": "road-to-utopia"}
-  - {"title": "State Fair", "slug": "state-fair"}
-  - {"title": "Seven Brides for Seven Brothers", "slug": "seven-brides-for-seven-brothers"}
-  - {"title": "The Music Man", "slug": "the-music-man"}
-  - {"title": "My Fair Lady", "slug": "my-fair-lady"}
-  - {"title": "Dr. Horrible’s Sing-Along Blog", "slug": "dr-horribles-sing-along-blog-2008"}
-  - {"title": "The Phantom of the Opera", "slug": "the-phantom-of-the-opera-2004"}
-  - {"title": "Fiddler on the Roof", "slug": "fiddler-on-the-roof"}
-  - {"title": "Scrooge", "slug": "scrooge-1970"}
+brian:
+  host: Brian
+  list:
+    - {"title": "Seven Brides for Seven Brothers", "slug": "seven-brides-for-seven-brothers"}
+    - {"title": "The Music Man", "slug": "the-music-man"}
+    - {"title": "Singin’ in the Rain", "slug": "singin-in-the-rain"}
+    - {"title": "Yankee Doodle Dandy", "slug": "yankee-doodle-dandy"}
+    - {"title": "The Sound of Music", "slug": "the-sound-of-music"}
+    - {"title": "In the Good Old Summertime", "slug": "in-the-good-old-summertime"}
+    - {"title": "Mary Poppins", "slug": "mary-poppins"}
+    - {"title": "The Phantom of the Opera", "slug": "the-phantom-of-the-opera-2004"}
+    - {"title": "Muppet Treasure Island", "slug": "muppet-treasure-island"}
+    - {"title": "Fiddler on the Roof", "slug": "fiddler-on-the-roof"}
+melissa:
+  host: Melissa
+  list:
+    - {"title": "Hello, Dolly!", "slug": "hello-dolly", "replaced": "How the Grinch Stole Christmas"}
+    - {"title": "Road to Utopia", "slug": "road-to-utopia"}
+    - {"title": "State Fair", "slug": "state-fair"}
+    - {"title": "Seven Brides for Seven Brothers", "slug": "seven-brides-for-seven-brothers"}
+    - {"title": "The Music Man", "slug": "the-music-man"}
+    - {"title": "My Fair Lady", "slug": "my-fair-lady"}
+    - {"title": "Dr. Horrible’s Sing-Along Blog", "slug": "dr-horribles-sing-along-blog-2008"}
+    - {"title": "The Phantom of the Opera", "slug": "the-phantom-of-the-opera-2004"}
+    - {"title": "Fiddler on the Roof", "slug": "fiddler-on-the-roof"}
+    - {"title": "Scrooge", "slug": "scrooge-1970"}
 ---
 
-{% movieList "Brian", list_brian %}
-{% movieList "Melissa", list_melissa %}
+{% movieList brian %}
+{% movieList melissa %}
