@@ -689,6 +689,10 @@ kbd kbd {
     padding: 0 0 1em 1em;
 }
 
+.post .spoilers a {
+    white-space: normal;
+}
+
 .post .spoilers h2 {
     margin-left: -0.4em;
 }
