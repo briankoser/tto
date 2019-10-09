@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
     const listShortCode = require('./_includes/shortcodes/list-shortcode.js');
     const linkListShortCode = require('./_includes/shortcodes/linklist-shortcode.js');
     const movieListShortCode = require('./_includes/shortcodes/movielist-shortcode.js');
+    const youtubeShortCode = require('./_includes/shortcodes/youtube-shortcode.js');
     const youtubeListShortCode = require('./_includes/shortcodes/youtubelist-shortcode.js');
 
     let humanizeDate = dateObj => dateObj.toLocaleString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
@@ -23,6 +24,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("list", listShortCode);
     eleventyConfig.addShortcode("linkList", linkListShortCode);
     eleventyConfig.addShortcode("movieList", movieListShortCode);
+    eleventyConfig.addShortcode("youtube", youtubeShortCode);
     eleventyConfig.addShortcode("youtubeList", youtubeListShortCode);
 
     eleventyConfig.addPassthroughCopy("css");

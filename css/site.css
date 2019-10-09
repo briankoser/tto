@@ -729,11 +729,25 @@ kbd kbd {
     margin-top: 2.6rem;
 }
 
-.post .spoilers .video-embed {
+.post .video-embed-container {
     margin-top: 1.3rem;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+    /* padding-bottom: 62.5%; - 16:10 aspect ratio */
+    /* padding-bottom: 75%; - 4:3 aspect ratio */
+}
+  
+.post .video-embed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; 
+    top: 0;
 }
 
-.post .spoilers .youtubelist li {
+.post .youtubelist li {
     margin-top: 2.6rem;
 }
 
@@ -851,7 +865,7 @@ kbd kbd {
 /*
     DESKTOP STYLES
 */
-@media screen and (min-width: 48.25em) {
+@media screen and (min-width: 900px) {
     /*
         SITE GRID
     */
@@ -883,7 +897,7 @@ kbd kbd {
 
     h2, .h2 {
         font-size: 1.95313rem;
-        letter-spacing: -0.03em; 
+        letter-spacing: -0.03em;
     }
     
 
@@ -930,5 +944,18 @@ kbd kbd {
 
     .episode-card .summary {
         margin-top: 0;
+    }
+
+
+
+    /*
+        EPISODE POST
+    */
+    .post .youtubelist li {
+        margin-top: 5.2rem;
+    }
+
+    .post h2 {
+        margin-top: 7.8rem;
     }
 }
