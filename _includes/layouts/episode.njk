@@ -17,13 +17,25 @@ layout: base
             <summary>Show Notes (expand)</summary>
             {{ content | safe }}
 
-            {% if notes %}
-            <h2>Notes</h2>
-            <ul>
-            {% for note in notes %}
-              <li>{{note | safe}}
-            {% endfor %}
-            </ul>
+            {% if notes or youtubeNotes %}
+                <h2>Notes</h2>
+                
+                {% if notes %}
+                    <ul>
+                    {% for note in notes %}
+                        <li>{{note | safe}}
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+
+                {% if youtubeNotes %}
+                    <ul class="youtubelist">
+                    {% for note in youtubeNotes %}
+                        <li>{% youtube note %}
+                    {% endfor %}
+                {% endif %}
+
+                </ul>
             {% endif %}
         </details>
     

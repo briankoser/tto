@@ -179,7 +179,7 @@ p {
 }
 
 figure {
-    margin: 0;
+    margin: 1.3rem 0 0 0;
 }
 
 
@@ -734,7 +734,6 @@ kbd kbd {
 }
 
 .post .video-embed-container {
-    margin-top: 1.3rem;
     position: relative;
     width: 100%;
     height: 0;
@@ -751,8 +750,20 @@ kbd kbd {
     top: 0;
 }
 
+.post .youtubelist {
+    padding-left: 0;
+}
+
+.post ul.youtubelist {
+    list-style-type: none;
+}
+
 .post .youtubelist li {
     margin-top: 2.6rem;
+}
+
+.post .youtubelist li:first-child {
+    margin-top: 0;
 }
 
 .post footer {
