@@ -766,6 +766,12 @@ kbd kbd {
     margin-top: 0;
 }
 
+.post .notes figure,
+.post .notes p {
+    margin-bottom: 3.9rem;
+}
+
+
 .post footer {
     margin-top: 3.9rem;
 }
@@ -970,7 +976,7 @@ kbd kbd {
         margin-top: 5.2rem;
     }
 
-    .post h2 {
+    .post .feedback h2 {
         margin-top: 7.8rem;
     }
 }
