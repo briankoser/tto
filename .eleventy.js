@@ -1,4 +1,5 @@
 module.exports = function(eleventyConfig) {
+    const boardGameListShortCode = require('./_includes/shortcodes/boardGamelist-shortcode.js');
     const episodeCardShortCode = require('./_includes/shortcodes/episodecard-shortcode.js');
     const episodeBlockShortCode = require('./_includes/shortcodes/episodeblock-shortcode.js');
     const episodeInlineShortCode = require('./_includes/shortcodes/episodeinline-shortcode.js');
@@ -18,6 +19,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
     eleventyConfig.addLayoutAlias('episode', 'layouts/episode.njk');
     
+    eleventyConfig.addShortcode("boardGameList", boardGameListShortCode);
     eleventyConfig.addShortcode("episodeCard", episodeCardShortCode);
     eleventyConfig.addShortcode("episodeBlock", episodeBlockShortCode);
     eleventyConfig.addShortcode("episodeInline", episodeInlineShortCode);
