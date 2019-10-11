@@ -1,4 +1,4 @@
-export default function boardGameListShortCode (data) {
+module.exports = function boardGameListShortCode (data) {
     return `
 ${data.host == undefined ? '' : `<h2>${data.host}</h2>`}
 <ol reversed>

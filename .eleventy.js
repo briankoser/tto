@@ -1,6 +1,6 @@
 module.exports = function(eleventyConfig) {
     const boardGameListShortCode = require('./_includes/shortcodes/cdnimage-shortcode.js');
-    const cdnImageShortCode = require('./_includes/shortcodes/cdnimage-shortcode.js').default;
+    const cdnImageShortCode = require('./_includes/shortcodes/cdnimage-shortcode.js');
     const episodeCardShortCode = require('./_includes/shortcodes/episodecard-shortcode.js');
     const episodeBlockShortCode = require('./_includes/shortcodes/episodeblock-shortcode.js');
     const episodeInlineShortCode = require('./_includes/shortcodes/episodeinline-shortcode.js');
