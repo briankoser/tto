@@ -754,16 +754,20 @@ kbd kbd {
     padding-left: 0;
 }
 
+.post ol.youtubelist {
+    list-style-position: inside;
+}
+
+.post ol.youtubelist h3 {
+    display: inline;
+}
+
 .post ul.youtubelist {
     list-style-type: none;
 }
 
 .post .youtubelist li {
     margin-top: 2.6rem;
-}
-
-.post .youtubelist li:first-child {
-    margin-top: 0;
 }
 
 .post .notes figure,
