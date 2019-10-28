@@ -5,6 +5,7 @@ ${data.host == undefined ? '' : `<h2>${data.host}</h2>`}
 ${data.list.map(entry => 
     `<li>
         <a href="https://boardgamegeek.com/boardgame/${entry.id}">${entry.title}</a>
+        ${entry.comment == undefined ? '' : ` - ${entry.comment}`}
     </li>`
 ).join('\n')}
 </ol>`;
