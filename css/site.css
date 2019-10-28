@@ -770,8 +770,8 @@ kbd kbd {
     margin-top: 2.6rem;
 }
 
-.post .notes figure,
-.post .notes p {
+.post .notes p,
+.post .notes .video-embed-container {
     margin-bottom: 3.9rem;
 }
 
