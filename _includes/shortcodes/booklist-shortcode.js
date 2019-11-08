@@ -1,6 +1,6 @@
 module.exports = function bookListShortCode (data) {
     let dataToListItem = data => 
-        `${data.replaced == undefined ? '' : `<span style="text-decoration:line-through;">${data.replaced}</span> `}
+        `${data.replaced == undefined ? '' : `<del>${data.replaced}</del> `}
         ${data.book == undefined ? '' : `<a href="https://www.goodreads.com/book/show/${data.book}/">${data.title}</a>`}
         ${data.review == undefined ? '' : `<a href="https://www.goodreads.com/review/show/${data.review}/">${data.title}</a>`}`;
 
