@@ -977,6 +977,10 @@ kbd kbd {
     /*
         EPISODE POST
     */
+    .post {
+        margin-top: 5.2rem;
+    }
+
     .post .youtubelist li {
         margin-top: 5.2rem;
     }
