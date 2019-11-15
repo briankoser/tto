@@ -1,0 +1,238 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="menu-hamburger" class="icon-menu-hamburger">
+    <title>Menu Hamburger</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    d="M62 12a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h52a4 4 0 0 1 4 4zm0 20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h52a4 4 0 0 1 4 4z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+    <path data-name="layer1" d="M62 52a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4h52a4 4 0 0 1 4 4z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="cancel" class="icon-cancel">
+    <title>Cancel</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M53.122 48.88L36.243 32l16.878-16.878a3 3 0 0 0-4.242-4.242L32 27.758l-16.878-16.88a3 3 0 0 0-4.243 4.243l16.878 16.88-16.88 16.88a3 3 0 0 0 4.243 4.241L32 36.243l16.878 16.88a3 3 0 0 0 4.244-4.243z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="close-square" class="icon-close-square">
+    <title>Close Square</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M0 0v64h64V0zm44.728 41.9a2 2 0 1 1-2.828 2.828l-9.899-9.9-9.9 9.9a2 2 0 0 1-2.828-2.828l9.9-9.9-9.9-9.899a2 2 0 1 1 2.829-2.828L32 29.172l9.9-9.899a2 2 0 1 1 2.827 2.829L34.83 32z"
+    fill="#1f1f1f" style="fill:var(--layer1, #1f1f1f)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="property" class="icon-property">
+    <title>Property</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M63.128 26L55 19.5V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v7.3L32.625 1.6a1 1 0 0 0-1.249 0L.872 26a1 1 0 0 0-.082 1.49l2.841 2.841a1 1 0 0 0 1.335.071L31.372 9.074a1 1 0 0 1 1.257 0L59.034 30.4a1 1 0 0 0 1.335-.071l2.841-2.839a1 1 0 0 0-.082-1.49z"
+    fill="#202020" style="fill:var(--layer2, #202020)"></path>
+    <path data-name="layer2" d="M32 12L9 31v30a1 1 0 0 0 1 1h12V41a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v21h12a1 1 0 0 0 1-1V31zm0 21a5 5 0 1 1 5-5 5 5 0 0 1-5 5z"
+    fill="#202020" style="fill:var(--layer2, #202020)"></path>
+    <path data-name="layer1" d="M25 42h14a1 1 0 0 1 1 1v19H24V43a1 1 0 0 1 1-1z"
+    fill="#202020" style="fill:var(--layer2, #202020)"></path>
+  </symbol>
+  <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="microphone" class="icon-microphone">
+    <title>Microphone</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path fill="#202020"
+    d="M32 44a12.014 12.014 0 0 0 12-12V13a12 12 0 1 0-24 0v19a12.014 12.014 0 0 0 12 12z"
+    data-name="layer2" style="fill:var(--layer1, #202020)"></path>
+    <path fill="#202020" d="M50 21a2 2 0 0 0-2 2v9a16 16 0 1 1-32 0v-9a2 2 0 1 0-4 0v9a20.027 20.027 0 0 0 18 19.9V60h-8a2 2 0 0 0 0 4h20a2 2 0 0 0 0-4h-8v-8.1A20.026 20.026 0 0 0 52 32v-9a2 2 0 0 0-2-2z"
+    data-name="layer1" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="rss" class="icon-rss">
+    <title>RSS</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M8.6 46.746a8.627 8.627 0 1 0 8.6 8.627 8.678 8.678 0 0 0-8.6-8.627zM.7 21.567H.2V33.5h.5a29.836 29.836 0 0 1 29.8 29.8v.7h11.9v-.7A41.719 41.719 0 0 0 .7 21.567z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+    <path data-name="layer1" d="M.7 0H.2v11.937h.5A51.4 51.4 0 0 1 52 63.3v.7h12v-.7A63.369 63.369 0 0 0 .7 0z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="user-group" class="icon-user-group">
+    <title>User Group</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    d="M38.1 51.2c-8-1.1-8-4-8-5.6v-.9a14.6 14.6 0 0 0 4.2-7c2.4 0 3-5.1 3-5.8s-.2-3.6-1.3-3.9c4-14-8-20-18.4-12.8-4.4 0-5.8 6.4-4.2 12.8-1.1 0-1.3 3-1.3 3.8s.6 5.8 3 5.8c.8 2.9 3 5.3 4.9 7v1c0 1.6-.6 4.6-8.7 5.6S2 60 2 60h44s.1-7.7-7.9-8.8z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+    <path data-name="layer1" d="M53.7 44c-8-1.6-7.7-4.8-7.7-6.4V36a56.7 56.7 0 0 0 12.8-1.6c-3.3-3.3-6.4-4.7-6.4-18.5 0-16.3-16-11.2-16-11.2a8.4 8.4 0 0 0-7.3 3.6 13.6 13.6 0 0 1 8.8 5.2c2.7 3.5 3.5 8.3 2.4 13.6a11.6 11.6 0 0 1 1 4.7c0 2-.8 6.9-3.9 8.9a18.6 18.6 0 0 1-3.2 5.4 12.1 12.1 0 0 0 4.3 1.2 12.5 12.5 0 0 1 8.8 4.7H62s0-6.3-8.3-8z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="healthcare" class="icon-healthcare">
+    <title>Healthcare</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    d="M35.282 44.29a7.781 7.781 0 0 0 2.287-3.354A1.976 1.976 0 0 0 39 39a2.014 2.014 0 0 0-.961-1.734C37.835 33.192 35.886 30 31 30s-6.835 3.192-7.039 7.266A2.014 2.014 0 0 0 23 39a1.976 1.976 0 0 0 1.431 1.936 7.781 7.781 0 0 0 2.287 3.354A10.022 10.022 0 0 0 21 53.308V58h20v-4.692a10.022 10.022 0 0 0-5.718-9.018z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+    <path data-name="layer1" d="M53 31.366V29.3c.2-.094.385-.2.572-.311h.009c2.381.989 7.259.037 9.32-1.9a.1.1 0 0 0-.022-.159A9.542 9.542 0 0 1 58 19c0-3.922-1.923-8.805-7.654-8.994A9.193 9.193 0 0 0 41 19.055c-.014 4.795-1.877 6.813-3.8 7.842a.1.1 0 0 0 .018.176c2.8.972 4.712 2.4 9.784 2.429v1.868a17.334 17.334 0 0 0-7.237 3.681c.084.4.157.813.2 1.245A4.064 4.064 0 0 1 41 39a4.017 4.017 0 0 1-1.872 3.417 9.811 9.811 0 0 1-.795 1.422A12.056 12.056 0 0 1 43 53.308V58h21V44c0-6.117-5.286-11.269-11-12.634zM23.667 43.839a9.809 9.809 0 0 1-.795-1.422A4.017 4.017 0 0 1 21 39a4.064 4.064 0 0 1 1.033-2.7 11.329 11.329 0 0 1 .9-3.439A19.3 19.3 0 0 0 17 30.363v-1.312a8.822 8.822 0 0 0 4.038-4.4 17.308 17.308 0 0 0 .771-1.671c.064.006.126.019.192.019a1.994 1.994 0 0 0 .967-3.74c.826-3.617.927-7.734-.967-10.26-1.7-2.263-8.451-2.549-11 0-1 1-6-1-6 5a39.493 39.493 0 0 0 .336 5.122A2 2 0 0 0 6 23c.062 0 .121-.013.182-.018a5.674 5.674 0 0 0 .641 1.339l.015.017A8.92 8.92 0 0 0 11 29.043v1.322C5.286 31.731 0 36.883 0 43v15h19v-4.692a12.056 12.056 0 0 1 4.667-9.469z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="new" class="icon-new">
+    <title>New</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M32 2a30 30 0 1 0 30 30A30 30 0 0 0 32 2zM20 40h-3.2L12 32.7V40H8V24h3.1l.6.9 4.3 6.6V24h4zm14-12h-6v2h4v4h-4v2h6v4H24V24h10zm17.9 12h-3.5l-2.5-7.5-2.7 7.5h-3.4l-4.2-15.5 3.9-1.1 2.3 8.6 2.1-6h4l2 6.1 2.4-8.6 3.8 1.1z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="ribbon" class="icon-ribbon">
+    <title>Ribbon</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    d="M32 2.6a20 20 0 1 0 20 20 20 20 0 0 0-20-20zm0 30a10 10 0 1 1 10-10 10 10 0 0 1-10 10z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+    <path data-name="layer1" d="M16.1 40.6L10 55.7l8.8-1.1 5.5 6.8 5.2-14.9a23.9 23.9 0 0 1-13.4-5.9zm18.5 5.9l5.2 14.9 5.5-6.8 8.7 1.1-6.1-15.1a23.9 23.9 0 0 1-13.3 5.9z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="mail" class="icon-mail">
+    <title>Mail</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    fill="#202020" d="M2 14.7v34.4l17.2-17.5L2 14.7zm42.8 16.9L62 49.1V14.7L44.8 31.6z"
+    style="fill:var(--layer2, #202020)"></path>
+    <path data-name="layer2" fill="#202020" d="M59.1 12H5l27 26.6L59.1 12z"
+    style="fill:var(--layer2, #202020)"></path>
+    <path data-name="layer1" fill="#202020" d="M32 44.2l-10-9.8L4.7 52h54.6L42 34.4l-10 9.8z"
+    style="fill:var(--layer2, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="play" class="icon-play">
+    <title>Play</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M32 2a30 30 0 1 0 30 30A30 30 0 0 0 32 2zm-8 44V18l24 14z" fill="#202020"
+    style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="pause" class="icon-pause">
+    <title>Pause</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M32 2a30 30 0 1 0 30 30A30 30 0 0 0 32 2zm-4 42a2 2 0 0 1-4 0V20a2 2 0 0 1 4 0zm12 0a2 2 0 0 1-4 0V20a2 2 0 0 1 4 0z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="podcast" class="icon-podcast">
+    <title>Podcast</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    d="M56 42V30a8 8 0 1 0-16 0v12a8 8 0 0 0 6 7.7V58h-4a2 2 0 0 0 0 4h12a2 2 0 0 0 0-4h-4v-8.3a8 8 0 0 0 6-7.7z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+    <path data-name="layer1" d="M36 42V30a12 12 0 0 1 9.9-11.8c0-.4.1-.8.1-1.2 0-8.3-6.3-15-14-15S18 8.7 18 17a15.3 15.3 0 0 0 6.1 12.4A24.1 24.1 0 0 0 8 52h33.4A12 12 0 0 1 36 42z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="color-palette" class="icon-color-palette">
+    <title>Color Palette</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M32 0A32 32 0 0 0 .3 36.4C1.4 41.7 5.5 48 18.9 48a64.1 64.1 0 0 0 8.3-.7 36.7 36.7 0 0 1 4.2-.4c1.3 0 1.5.2 1.5.3s.3.4.1 1.9-.5.5-2.2.8-6.8 1.3-6.8 7c0 4.1 3.4 6.8 9 7.1h.2a32 32 0 0 0 15.2-4.4h.1l.8-.6 1-.6h.2A32 32 0 0 0 32 0zM19.2 37.3a6 6 0 1 1 0-8.5 6 6 0 0 1 0 8.5zm2.6-15.4a4 4 0 0 1-5.7-5.7 4.1 4.1 0 0 1 5.7 0 4 4 0 0 1 0 5.7zm13.7-4.3A5 5 0 1 1 37 14a5 5 0 0 1-1.5 3.5zm14 6A5 5 0 1 1 51 20a5 5 0 0 1-1.5 3.5z"
+    fill="#1f1f1f" style="fill:var(--layer1, #1f1f1f)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="design" class="icon-design">
+    <title>Design</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    fill="#1f1f1f" d="M46.899 6.274l6.293-6.293 10.854 10.854-6.293 6.293zM0 64l17.9-7.9-10-10L0 64z"
+    style="fill:var(--layer1, #1f1f1f)"></path>
+    <path data-name="layer1" d="M54.9 20L44.1 9.1 33.4 19.8 13.6 0 0 13.6l19.7 19.8-9.4 9.4 10.8 10.9 9.4-9.4L50 64l13.8-13.8-19.6-19.6zm-36.2 6.8l4.6-4.6-2.8-2.8-4.6 4.6-3.5-3.5 3-3-2.8-2.8-3 3-3.9-4 7.9-7.9 16.9 16.8-8 8zm39.4 23.4L50 58.3l-3.7-3.7 4.1-4.1-2.8-2.8-4.1 4.1-3.2-3.2 3.1-3.1-2.8-2.8-3.1 3.1-4.2-4.2 8.1-8z"
+    fill="#1f1f1f" style="fill:var(--layer1, #1f1f1f)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="headphones-user" class="icon-headphones-user">
+    <title>Headphones User</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    d="M39.9 40.4A15.3 15.3 0 0 0 46 28c0-8.3-6.3-15-14-15s-14 6.7-14 15a15.3 15.3 0 0 0 6.1 12.4A24.1 24.1 0 0 0 8 63h48a24.1 24.1 0 0 0-16.1-22.6z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+    <path data-name="layer1" d="M52 19h-2a18 18 0 1 0-36 0h-2a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h4.2a19.8 19.8 0 0 1-2.2-9 19.5 19.5 0 0 1 4.5-12.5 14 14 0 0 1 27.1 0A19.5 19.5 0 0 1 50 28a19.8 19.8 0 0 1-2.2 9H52a4 4 0 0 0 4-4V23a4 4 0 0 0-4-4z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="inkpot" class="icon-inkpot">
+    <title>Inkpot</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    d="M62.6.2a2 2 0 0 0-2.2.4L49.9 11.2V4.7a2 2 0 0 0-.2-.9 2 2 0 0 0-2.7-1c-6.8 3.3-14.8 10.5-15.1 26.4l-4.5 4.5a2 2 0 1 0 2.8 2.8l4.5-4.5c8.7 0 29.2-1 29.2-30A2 2 0 0 0 62.6.2zM38.9 27.8L59.6 7.1C58.1 22.8 49.3 27 38.9 27.8z"
+    fill="#1f1f1f" style="fill:var(--layer1, #1f1f1f)"></path>
+    <path data-name="layer1" d="M22.1 48.5V45a1 1 0 0 1 1-1h1a1.1 1.1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-12a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h1a1 1 0 0 1 1 1v3.5A18.6 18.6 0 0 0 .1 64h36a18.6 18.6 0 0 0-14-15.5z"
+    fill="#1f1f1f" style="fill:var(--layer1, #1f1f1f)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="chats" class="icon-chats">
+    <title>Chats</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2"
+    d="M50 24.7C50 14.1 39.3 5.5 26 5.5S2 14.1 2 24.7C2 30.1 4.8 35 9.3 38.4L4.1 49.3l15.3-6.1a29.6 29.6 0 0 0 6.6.7c13.3 0 24-8.6 24-19.2z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+    <path data-name="layer1" d="M62 41.1c0-5.1-3.4-9.5-8.6-11.8-2.3 9.5-11.7 16.9-23.3 18.3 2.9 4.2 8.5 7.1 14.9 7.1a21 21 0 0 0 4.7-.5L60 58.5l-3.1-7.7a12.4 12.4 0 0 0 5.1-9.7z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="android" class="icon-android">
+    <title>Android</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M40.568 5.913l2.79-5.008a.543.543 0 0 0-.2-.8.44.44 0 0 0-.7.2l-2.886 5.107A18.933 18.933 0 0 0 32 3.91a18.933 18.933 0 0 0-7.572 1.5L21.539.3a.52.52 0 0 0-.8-.2.543.543 0 0 0-.2.8l2.79 5.008a15.824 15.824 0 0 0-9.166 14.021v.3h35.472v-.3c.099-6.104-3.587-11.312-9.067-14.016zM23.83 13.825a1.6 1.6 0 1 1 1.594-1.6 1.52 1.52 0 0 1-1.594 1.6zm16.339 0a1.6 1.6 0 1 1 1.594-1.6 1.578 1.578 0 0 1-1.593 1.6zM14.266 37.56v9.815a4.051 4.051 0 0 0 4.085 4.106h3.089v8.613A3.9 3.9 0 0 0 25.325 64a3.967 3.967 0 0 0 3.886-3.906v-8.613h5.48v8.613a3.886 3.886 0 1 0 7.771 0v-8.613h3.088a4.051 4.051 0 0 0 4.085-4.106V21.536H14.266zm40.848-16.825a3.9 3.9 0 0 0-3.886 3.906v16.625a3.886 3.886 0 1 0 7.771 0V24.741a3.988 3.988 0 0 0-3.885-4.006zm-46.228 0A3.9 3.9 0 0 0 5 24.641v16.625a3.886 3.886 0 1 0 7.771 0V24.741a3.924 3.924 0 0 0-3.885-4.006z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="apple" class="icon-apple">
+    <title>Apple</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M49.424 34c-.1-8.1 6.581-12 6.88-12.2a14.581 14.581 0 0 0-11.667-6.3c-4.986-.5-9.672 2.9-12.265 2.9-2.493 0-6.382-2.9-10.57-2.8a15.75 15.75 0 0 0-13.162 8c-5.584 9.8-1.4 24.4 4.088 32.3 2.692 3.9 5.883 8.3 10.071 8.1 4.088-.2 5.584-2.6 10.47-2.6s6.282 2.6 10.57 2.5c4.388-.1 7.08-4 9.772-7.9A31.77 31.77 0 0 0 58 46.9 13.956 13.956 0 0 1 49.424 34zm-8.077-23.8A14.32 14.32 0 0 0 44.638 0a14.075 14.075 0 0 0-9.373 4.8c-2.094 2.4-3.889 6.2-3.39 9.9 3.589.3 7.279-1.8 9.472-4.5z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="windows" class="icon-windows">
+    <title>Windows</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    fill="#202020" d="M0 29.9V9.1l25.6-3.5v24.3H0zM29.9 5L64 0v29.9H29.9V5zM64 34.1V64l-34.1-4.8V34.1H64zM25.6 58.7L0 55.1v-21h25.6v24.6z"
+    style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="spotify" class="icon-spotify">
+    <title>Spotify</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M32 0a32 32 0 1 0 32 32A31.966 31.966 0 0 0 32 0zm12.3 47.2a2.654 2.654 0 0 1-1.4-.5 32.041 32.041 0 0 0-16.6-4.3 48.082 48.082 0 0 0-10.1 1.1 11.045 11.045 0 0 1-1.6.3 2 2 0 0 1-2-2 2.11 2.11 0 0 1 1.7-2.2 53.9 53.9 0 0 1 12-1.4A35.787 35.787 0 0 1 44.9 43a2.131 2.131 0 0 1 1.3 2.1 1.846 1.846 0 0 1-1.9 2.1zm3.5-8.5a2.834 2.834 0 0 1-1.6-.6A41.422 41.422 0 0 0 25.9 33a43.3 43.3 0 0 0-10.4 1.3 4.707 4.707 0 0 1-1.6.4 2.476 2.476 0 0 1-2.5-2.5 2.6 2.6 0 0 1 2-2.7A43.762 43.762 0 0 1 26 27.7a44.707 44.707 0 0 1 22.8 5.9 2.583 2.583 0 0 1 1.5 2.5 2.5 2.5 0 0 1-2.5 2.6zm4-9.8a3.022 3.022 0 0 1-1.6-.5C44.3 24.9 35.3 23 26.7 23a49.826 49.826 0 0 0-12.8 1.5 9.005 9.005 0 0 1-1.6.3 3.031 3.031 0 0 1-3-3.1 3.213 3.213 0 0 1 2.2-3.1 55.906 55.906 0 0 1 15.2-2c9.4 0 19.3 1.9 26.5 6.2a3.025 3.025 0 0 1 1.6 2.9 3.058 3.058 0 0 1-3 3.2z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="rewind" class="icon-rewind">
+    <title>Rewind</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M32 2a30 30 0 1 0 30 30A30 30 0 0 0 32 2zm10 41l-10-6.9V43L16 32l16-11v6.9L42 21z"
+    fill="#202020" style="fill:var(--layer1, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="radio-tower" class="icon-radio-tower">
+    <title>Radio Tower</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <circle data-name="layer1"
+    cx="32" cy="33" r="8" fill="#202020" style="fill:var(--layer2, #202020)"></circle>
+    <path data-name="layer2" d="M32 11a22 22 0 0 0-15.6 37.6 2 2 0 0 0 2.8-2.8 18 18 0 1 1 25.5 0 2 2 0 0 0 2.8 2.8A22 22 0 0 0 32 11z"
+    fill="#202020" style="fill:var(--layer2, #202020)"></path>
+    <path data-name="layer2" d="M32 1A32 32 0 0 0 9.4 55.6a2 2 0 0 0 2.8-2.8A28 28 0 1 1 60 33a27.8 27.8 0 0 1-8.2 19.8 2 2 0 0 0 2.8 2.8A32 32 0 0 0 32 1z"
+    fill="#202020" style="fill:var(--layer2, #202020)"></path>
+    <path data-name="layer1" d="M32 47c-6.6 0-12 7.2-12 16h24c0-8.8-5.4-16-12-16z"
+    fill="#202020" style="fill:var(--layer2, #202020)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="add-circle" class="icon-add-circle">
+    <title>Add Circle</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M32 0a32 32 0 1 0 32 32A32.001 32.001 0 0 0 32 0zm16 34H34v14a2 2 0 1 1-4 0V34H16a2 2 0 0 1 0-4h14V16a2 2 0 1 1 4 0v14h14a2 2 0 0 1 0 4z"
+    fill="#202020"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="minus-circle" class="icon-minus-circle">
+    <title>Minus Circle</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer1"
+    d="M32 0a32 32 0 1 0 32 32A32 32 0 0 0 32 0zm16 34H16a2 2 0 0 1 0-4h32a2 2 0 0 1 0 4z"
+    fill="#202020"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="previous" class="icon-previous">
+    <title>Previous</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2" fill="var(--layer2, #202020)" d="M42 23.8l20-13.6v43.6L42 40.2v13.6L10 32v-.1l32-21.7v13.6z"></path>
+    <path data-name="layer1" fill="var(--layer1, #202020)" d="M10 8v48H2V8h8z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="next" class="icon-next">
+    <title>Next</title>
+    <desc>A solid styled icon from Orion Icon Library.</desc>
+    <path data-name="layer2" fill="var(--layer2, #202020)" d="M22 23.8L2 10.2v43.6l20-13.6v13.6L54 32v-.1L22 10.2v13.6z"></path>
+    <path data-name="layer1" fill="var(--layer1, #202020)" d="M54 8v48h8V8h-8z"></path>
+  </symbol>
+</svg>

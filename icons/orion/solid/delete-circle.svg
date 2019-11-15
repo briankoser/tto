@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
-aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Delete Circle</title>
-  <desc>A solid styled icon from Orion Icon Library.</desc>
-  <path data-name="layer1"
-  d="M54.629 9.372a32 32 0 1 0 0 45.254 32.001 32.001 0 0 0 0-45.254zM44.727 41.9a2 2 0 1 1-2.828 2.828l-9.9-9.9-9.899 9.9a2 2 0 0 1-2.828-2.828l9.9-9.9-9.9-9.9a2 2 0 0 1 2.828-2.827L32 29.17l9.899-9.898a2 2 0 0 1 2.828 2.828l-9.9 9.898z"
-  fill="#202020"></path>
-</svg>

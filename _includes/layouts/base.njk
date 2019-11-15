@@ -12,23 +12,23 @@
     <body>
         <header class="site-header js-site-nav">
             <div class="header-flex">
-                <img alt="logo">
-                <a id="site-nav-link" href="#site-nav" class="menu-link">☰ Menu</a>
+                <img alt="Ten to One">
+                <a id="site-nav-link" href="#site-nav" class="menu-link">{% icon 'menu-hamburger' %} Menu</a>
             </div>
             <nav id="site-nav" class="site-nav js-site-nav">
                 <ol>
-                    <li><a href="/">[i] Home</a>
-                    <li><a href="/episodes/">[i] Episodes</a>
-                    <li><a href="/about/">[i] About</a>
-                    <li><a href="/subscribe/">[i] Subscribe</a>
+                    <li><a href="/">{% icon 'property' %} Home</a>
+                    <li><a href="/episodes/">{% icon 'microphone' %} Episodes</a>
+                    <li><a href="/about/">{% icon 'user-group' %} About</a>
+                    <li><a href="/subscribe/">{% icon 'headphones-user' %} Subscribe</a>
                 </ol>
                 <div class="site-nav-episodes">
                     {% episodeBlock collections.episodes | last, "Latest", metadata.cdn_url %}
                     {# <div><a href="#">Recommended</a></div> #}
                 </div>
                 <div class="site-nav-footer">
-                    <a href="/feed.rss">[i] RSS</a>
-                    <a href="mailto:tto@koser.us">[i] tto@koser.us</a>
+                    <a href="/feed.rss">{% icon 'rss' %} RSS</a>
+                    <a href="mailto:tto@koser.us">{% icon 'mail' %} tto@koser.us</a>
                 </div>
                 </ol>
             </nav>
@@ -38,9 +38,9 @@
         </main>
         <footer class="site-footer">
             <ol>
-                <li>[i] Podcast by <a class="h-card" href="http://koser.us/melissa">Melissa</a> and <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
-                <li>[i] Website by <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
-                <li>[i] Logo by <a class="h-card" href="">Matt Koser</a>
+                <li>{% icon 'podcast' %} Podcast by <a class="h-card" href="http://koser.us/melissa">Melissa</a> and <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
+                <li>{% icon 'design' %} Website by <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
+                <li>{% icon 'color-palette' %} Logo by <a class="h-card" href="">Matt Koser</a>
             </ol>
         </footer>
         <script src="/js/site.js"></script>

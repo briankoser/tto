@@ -469,12 +469,28 @@ kbd kbd {
 }
 
 .icon {
-	display: inline-block;
-	color: var(--color-white);
-    fill: currentColor;
-	font-size: 24px;
 	height: 1em;
-	width: 1.3em;
+    width: 1em;
+    position: relative;
+    top: 0.125em;
+    flex-shrink: 0;
+    --layer1: var(--color-white);
+    --layer2: var(--color-white);
+}
+
+.site-main .icon {
+    --layer1: var(--color-black);
+    --layer2: var(--color-black);
+}
+
+.icon-mail,
+.icon-rss {
+    top: 0.2em;       
+}
+
+.icon-headphones-user,
+.icon-property {
+    top: 0.05em;
 }
 
 
@@ -666,6 +682,10 @@ kbd kbd {
     font-size: 0.75em;
 }
 
+.post nav a {
+    text-decoration: none;
+}
+
 .post .spoilers,
 .post .feedback {
     margin-top: 5.2rem;
@@ -699,7 +719,7 @@ kbd kbd {
 
 .post .spoilers summary {
     background-color: var(--color-dark-grey);
-    list-style-image: url(/icons/orion/color/play.svg);
+    /* list-style-image: url(/icons/orion/icon-plus-circle.svg); */
     padding: 1em 0;
     margin-left: -1em;
     cursor: pointer;
@@ -712,17 +732,17 @@ kbd kbd {
 
 .post details[open].spoilers summary {
     background-color: var(--color-primary);
-    list-style-image: url(/icons/orion/color/pause.svg);
+    /* list-style-image: url(/icons/orion/icon-minus-circle.svg); */
 }
 
 .post .spoilers summary::-webkit-details-marker {
-    background: url(/icons/orion/color/play.svg);
+    /* background: url(/icons/orion/icon-plus-circle.svg); */
     color: transparent;
 }
 
-.post details[open].spoilers summary::-webkit-details-marker {
-    background: url(/icons/orion/color/pause.svg);
-}
+/* .post details[open].spoilers summary::-webkit-details-marker {
+    background: url(/icons/orion/icon-minus-circle.svg);
+} */
 
 .post audio,
 .post .description {
@@ -844,7 +864,7 @@ kbd kbd {
 }
 
 .tab:after {
-    content: '[i] +';
+    /* content: url(/icons/orion/icon-plus-circle.svg); */
     position: absolute;
     top: 0;
     right: 0;
@@ -857,9 +877,9 @@ kbd kbd {
     background: rgba(0,0,0,0.3);
 }
 
-.tab.active:after {
-    content: '[i] -'; 
-}
+/* .tab.active:after {
+    content: url(/icons/orion/icon-minus-circle.svg); 
+} */
 
 .panel { 
     overflow: hidden;
@@ -941,6 +961,24 @@ kbd kbd {
     .site-nav .episode-info,
     .site-nav .site-nav-footer {
         margin-top: 1.3em;
+    }
+
+
+
+    /*
+        ICONS
+    */
+    .icon {
+        font-size: 1.2em;
+        top: 0.2em;
+    }
+
+    .icon-property {
+        top: 0.1em;
+    }
+
+    .icon-rss {
+        top: 0.25em;
     }
 
 

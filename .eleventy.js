@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
     const episodeCardShortCode = require('./_includes/shortcodes/episodecard-shortcode.js');
     const episodeBlockShortCode = require('./_includes/shortcodes/episodeblock-shortcode.js');
     const episodeInlineShortCode = require('./_includes/shortcodes/episodeinline-shortcode.js');
+    const iconShortCode = require('./_includes/shortcodes/icon-shortcode.js');
     const listShortCode = require('./_includes/shortcodes/list-shortcode.js');
     const linkListShortCode = require('./_includes/shortcodes/linklist-shortcode.js');
     const movieListShortCode = require('./_includes/shortcodes/movielist-shortcode.js');
@@ -27,6 +28,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("episodeCard", episodeCardShortCode);
     eleventyConfig.addShortcode("episodeBlock", episodeBlockShortCode);
     eleventyConfig.addShortcode("episodeInline", episodeInlineShortCode);
+    eleventyConfig.addShortcode("icon", iconShortCode);
     eleventyConfig.addShortcode("list", listShortCode);
     eleventyConfig.addShortcode("linkList", linkListShortCode);
     eleventyConfig.addShortcode("movieList", movieListShortCode);
@@ -35,5 +37,5 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
-    eleventyConfig.addPassthroughCopy("icons/icons8");
+    eleventyConfig.addPassthroughCopy("icons");
 };

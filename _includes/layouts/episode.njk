@@ -41,8 +41,8 @@ layout: base
     
         <div class="feedback">
             <h2>Feedback</h2>
-            <p>[i] Email <a href="mailto:tto@koser.us">tto@koser.us</a></p>         
-            <div class="comments">implement comments here</p>
+            <p>{% icon 'mail' %} Email <a href="mailto:tto@koser.us">tto@koser.us</a></p>         
+            {# <div class="comments">implement comments here</p> #}
         </div>
     </div>
     
@@ -52,10 +52,10 @@ layout: base
             {% set nextItem = collections.episodes[number] %}
 
             {% if previousItem %}
-                <div class="previous"><a rel="prev" href="{{ previousItem.url }}" >« [i] № {{ previousItem.data.number }} {{ previousItem.data.title }}</a></div>
+                <div class="previous"><a rel="prev" href="{{ previousItem.url }}" >{% icon 'previous' %} № {{ previousItem.data.number }} {{ previousItem.data.title }}</a></div>
             {% endif %}
             {% if nextItem %}
-                <div class="next"><a rel="next" href="{{ nextItem.url }}" >№ {{ nextItem.data.number }} {{ nextItem.data.title }} [i] »</a></div>
+                <div class="next"><a rel="next" href="{{ nextItem.url }}" >№ {{ nextItem.data.number }} {{ nextItem.data.title }} {% icon 'next' %}</a></div>
             {% endif %}
         </nav>
     </footer>
