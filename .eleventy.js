@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     const iconShortCode = require('./_includes/shortcodes/icon-shortcode.js');
     const listShortCode = require('./_includes/shortcodes/list-shortcode.js');
     const linkListShortCode = require('./_includes/shortcodes/linklist-shortcode.js');
+    const movieShortCode = require('./_includes/shortcodes/movie-shortcode.js');
     const movieListShortCode = require('./_includes/shortcodes/movielist-shortcode.js');
     const youtubeShortCode = require('./_includes/shortcodes/youtube-shortcode.js');
     const youtubeListShortCode = require('./_includes/shortcodes/youtubelist-shortcode.js');
@@ -31,6 +32,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("icon", iconShortCode);
     eleventyConfig.addShortcode("list", listShortCode);
     eleventyConfig.addShortcode("linkList", linkListShortCode);
+    eleventyConfig.addShortcode("movie", movieShortCode);
     eleventyConfig.addShortcode("movieList", movieListShortCode);
     eleventyConfig.addShortcode("youtube", youtubeShortCode);
     eleventyConfig.addShortcode("youtubeList", youtubeListShortCode);
