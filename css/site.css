@@ -728,8 +728,8 @@ kbd kbd {
 
 .post .spoilers summary {
     background-color: var(--color-dark-grey);
-    /* list-style-image: url(/icons/orion/icon-plus-circle.svg); */
-    padding: 1em 0;
+    list-style-image: url(/icons/orion/icon-plus-circle.svg);
+    padding: 1em;
     margin-left: -1em;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;  
@@ -741,7 +741,7 @@ kbd kbd {
 
 .post details[open].spoilers summary {
     background-color: var(--color-primary);
-    /* list-style-image: url(/icons/orion/icon-minus-circle.svg); */
+    list-style-image: url(/icons/orion/icon-minus-circle.svg);
 }
 
 .post .spoilers summary::-webkit-details-marker {
