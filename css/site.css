@@ -728,7 +728,7 @@ kbd kbd {
 
 .post .spoilers summary {
     background-color: var(--color-dark-grey);
-    list-style-image: url(/icons/orion/icon-plus-circle.svg);
+    list-style-image: url(/icons/orion/icon-plus-circle-white.svg);
     padding: 1em;
     margin-left: -1em;
     cursor: pointer;
@@ -741,17 +741,17 @@ kbd kbd {
 
 .post details[open].spoilers summary {
     background-color: var(--color-primary);
-    list-style-image: url(/icons/orion/icon-minus-circle.svg);
+    list-style-image: url(/icons/orion/icon-minus-circle-white.svg);
 }
 
 .post .spoilers summary::-webkit-details-marker {
-    /* background: url(/icons/orion/icon-plus-circle.svg); */
+    background: url(/icons/orion/icon-plus-circle-white.svg);
     color: transparent;
 }
 
-/* .post details[open].spoilers summary::-webkit-details-marker {
-    background: url(/icons/orion/icon-minus-circle.svg);
-} */
+ .post details[open].spoilers summary::-webkit-details-marker {
+    background: url(/icons/orion/icon-minus-circle-white.svg);
+}
 
 .post audio,
 .post .description {
@@ -873,22 +873,22 @@ kbd kbd {
 }
 
 .tab:after {
-    /* content: url(/icons/orion/icon-plus-circle.svg); */
+    content: url(/icons/orion/icon-plus-circle-black.svg);
     position: absolute;
     top: 0;
     right: 0;
     display: block;
     font-size: 1.5em;
-    padding: 0.5em;
+    padding: 0.8em;
 }
 
 .tab.active {
     background: rgba(0,0,0,0.3);
 }
 
-/* .tab.active:after {
-    content: url(/icons/orion/icon-minus-circle.svg); 
-} */
+.tab.active:after {
+    content: url(/icons/orion/icon-minus-circle-black.svg); 
+}
 
 .panel { 
     overflow: hidden;
