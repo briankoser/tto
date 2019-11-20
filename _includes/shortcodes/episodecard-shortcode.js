@@ -1,4 +1,4 @@
-module.exports = function episodeCardShortCode (episode, readableDate) {
+module.exports = function episodeCardShortCode (episode, readableDate, machineDate) {
     return `
 <article class="episode episode-card h-entry">
     <header class="episode">
@@ -8,7 +8,7 @@ module.exports = function episodeCardShortCode (episode, readableDate) {
         </a>
     </header>
     <div class="summary">
-        <p><time class="dt-published" datetime='${episode.date}'>${readableDate}</time> · <span class="e-content">${episode.data.description}</span></p>
+        <p><time class="dt-published" datetime='${machineDate}'>${readableDate}</time> · <span class="e-content">${episode.data.description}</span></p>
     </div>
 </article>`;
 }

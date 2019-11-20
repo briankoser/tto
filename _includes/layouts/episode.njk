@@ -4,7 +4,7 @@ layout: base
 <article class="post h-entry">
     <header>
         <h1 class="post-title p-name">№ {{ number }} {{ title }}</h1>
-        <time class="post-date dt-published" datetime='{{ date }}'>{{ date | readableDate }}</time>
+        <time class="post-date dt-published" datetime='{{ date | machineDate }}'>{{ date | readableDate }}</time>
     </header>
     
     <div class="e-content">
@@ -42,7 +42,7 @@ layout: base
         <div class="feedback">
             <h2>Feedback</h2>
             <p>{% icon 'mail' %} Email <a href="mailto:tto@koser.us">tto@koser.us</a></p>         
-            <div class="comments">Comments temporarily disabled with the new design. They will return.</p>
+            <div class="comments">Comments temporarily disabled with the new design. They will return.</div>
         </div>
     </div>
     

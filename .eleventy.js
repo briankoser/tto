@@ -14,8 +14,13 @@ module.exports = function(eleventyConfig) {
     const youtubeListShortCode = require('./_includes/shortcodes/youtubelist-shortcode.js');
 
     let humanizeDate = dateObj => dateObj.toLocaleString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
-    eleventyConfig.addFilter("episodeReadableDate", episode => humanizeDate(episode.date));
     eleventyConfig.addFilter("readableDate", humanizeDate);
+    eleventyConfig.addFilter("episodeReadableDate", episode => humanizeDate(episode.date));
+    
+    let machineDate = dateObj => dateObj.toISOString().slice(0, 10);
+    eleventyConfig.addFilter("machineDate", machineDate);
+    eleventyConfig.addFilter("episodeMachineDate", episode => machineDate(episode.date));
+
     eleventyConfig.addFilter("rssTags", tags => tags.filter(tag => !['episodes'].includes(tag)));
     eleventyConfig.addFilter("utcString", dateObj => dateObj.toUTCString().replace(' GMT', ''));
     eleventyConfig.addFilter("year", dateObj => dateObj.getFullYear());
