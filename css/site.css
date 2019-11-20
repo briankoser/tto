@@ -4,7 +4,7 @@
 @font-face {
     font-family: ConcourseBlack;
     src:
-        local("Concourse T8"), 
+        /* local("Concourse T8"),  */
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t8_regular.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t8_regular.woff") format("woff"); 
 }
@@ -12,7 +12,7 @@
 @font-face {
     font-family: ConcourseLight;
     src:
-        local("Concourse T2"), 
+        /* local("Concourse T2"),  */
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t2_regular.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t2_regular.woff") format("woff"); 
 }
@@ -20,7 +20,7 @@
 @font-face {
     font-family: ConcourseLight;
     src:
-        local("Concourse T2"), 
+        /* local("Concourse T2"),  */
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t2_italic.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t2_italic.woff") format("woff");
     font-style: italic; 
@@ -29,7 +29,7 @@
 @font-face {
     font-family: Concourse;
     src:
-        local("Concourse T4"),
+        /* local("Concourse T4"), */
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t4_regular.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t4_regular.woff") format("woff"); 
 }
@@ -37,7 +37,7 @@
 @font-face {
     font-family: Concourse;
     src:
-        local("Concourse T4"),
+        /* local("Concourse T4"), */
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t4_bold.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t4_bold.woff") format("woff");
     font-weight: 700; 
@@ -46,7 +46,7 @@
 @font-face {
     font-family: Concourse;
     src:
-        local("Concourse T4"),
+        /* local("Concourse T4"), */
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t4_italic.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t4_italic.woff") format("woff");
     font-style: italic; 
@@ -55,7 +55,7 @@
 @font-face {
     font-family: Concourse;
     src:
-        local("Concourse T4"), 
+        /* local("Concourse T4"),  */
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t4_bold_italic.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_t4_bold_italic.woff") format("woff");
     font-weight: 700;
@@ -65,7 +65,7 @@
 @font-face {
     font-family: OpenSansNumero;
     src:
-        local("Open Sans"),
+        /* local("Open Sans"), */
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansRegularNumero.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansRegularNumero.woff") format("woff"); 
 }
@@ -73,7 +73,7 @@
 @font-face {
     font-family: OpenSansNumero;
     src: 
-        local("Open Sans"),
+        /* local("Open Sans"), */
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansBoldNumero.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansBoldNumero.woff") format("woff");
     font-weight: 700; 
@@ -82,7 +82,7 @@
 @font-face {
     font-family: OpenSansNumero;
     src: 
-        local("Open Sans"),
+        /* local("Open Sans"), */
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansItalicNumero.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansItalicNumero.woff") format("woff");
     font-style: italic; 
@@ -91,7 +91,7 @@
 @font-face {
     font-family: OpenSansNumero;
     src: 
-        local("Open Sans"),
+        /* local("Open Sans"), */
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansBoldItalicNumero.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansBoldItalicNumero.woff") format("woff");
     font-weight: 700;
@@ -101,7 +101,7 @@
 @font-face {
     font-family: OpenSansLightNumero;
     src: 
-        local("Open Sans"),
+        /* local("Open Sans"), */
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansLightNumero.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansLightNumero.woff") format("woff"); 
 }
@@ -109,7 +109,7 @@
 @font-face {
     font-family: OpenSansLightNumero;
     src: 
-        local("Open Sans"),
+        /* local("Open Sans"), */
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansLightItalicNumero.woff2") format("woff2"), 
         url("https://s3.amazonaws.com/fonts.koser.us/OpenSansLightItalicNumero.woff") format("woff");
     font-style: italic; 
