@@ -12,12 +12,12 @@
     <body>
         <header class="site-header js-site-nav">
             <div class="header-flex">
-                <img alt="" title="Ten to One logo">
+                <img class="site-logo" src="/img/logo.svg">
                 <h1 class="masthead">Ten to One</h1>
                 <a id="site-nav-link" href="#site-nav" class="menu-link">{% icon 'menu-hamburger' %} Menu</a>
             </div>
             <nav id="site-nav" class="site-nav js-site-nav">
-                <ol>
+                <ol class="site-nav-links">
                     <li><a href="/">{% icon 'property' %} Home</a>
                     <li><a href="/episodes/">{% icon 'microphone' %} Episodes</a>
                     <li><a href="/about/">{% icon 'user-group' %} About</a>
@@ -38,7 +38,7 @@
         </main>
         <footer class="site-footer">
             <ol>
-                <li>{% icon 'podcast' %} Podcast by <a class="h-card" href="http://koser.us/melissa">Melissa</a> and <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
+                <li>{% icon 'podcast' %} Podcast by <a class="h-card" href="http://koser.us/melissa">Melissa</a> & <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
                 <li>{% icon 'design' %} Website by <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
                 <li>{% icon 'color-palette' %} Logo by <a class="h-card" href="">Matt Koser</a>
             </ol>
