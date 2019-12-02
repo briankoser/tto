@@ -258,7 +258,7 @@ button:focus {
 ul,
 ol {
   list-style-position: outside;
-  padding-left: 1em; 
+  padding-left: 1.5em; 
 }
 
 ul ul,
@@ -515,6 +515,10 @@ kbd kbd {
     padding: 1rem 0 1rem 1rem;
 }
 
+.site-header .menu-link {
+    text-transform: uppercase;
+}
+
 .site-main {
     grid-area: main;
 }
@@ -571,7 +575,6 @@ kbd kbd {
     margin: 0;
     padding: 0;
 }
-
 
 .site-nav li > a,
 .site-nav .site-nav-footer a {
@@ -720,6 +723,11 @@ kbd kbd {
 
 .post .spoilers h2 {
     margin-left: -0.4em;
+}
+
+.post .spoilers ol,
+.post .spoilers ul {
+    padding-left: 1em;
 }
 
 .post .spoilers summary {
@@ -965,7 +973,6 @@ kbd kbd {
     */
     a.menu-link {
         display: none;
-        text-transform: uppercase;
     }
 
     .js .site-nav {
