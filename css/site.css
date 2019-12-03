@@ -465,7 +465,8 @@ kbd kbd {
 }
 
 .icon-rss {
-    top: 0.1em;       
+    top: 0.1em;      
+    width: 0.8em;
 }
 
 .icon-headphones-user,
@@ -502,21 +503,20 @@ kbd kbd {
 }
 
 .site-header .masthead {
-    font-family: Concourse, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 2em;
     margin-top: 0;
     display: none;
 }
 
-.site-header .header-flex {
+.site-header .menu-link {
+    text-transform: uppercase;
+}
+
+.header-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 1rem;
-}
-
-.site-header .menu-link {
-    text-transform: uppercase;
 }
 
 .site-main {
@@ -586,6 +586,11 @@ kbd kbd {
     background-color: var(--color-black);
     color: var(--color-primary);
     padding: 1.3em;
+}
+
+.site-nav .site-nav-episodes .icon {
+    --layer1: var(--color-primary);
+    --layer2: var(--color-primary);
 }
 
 .site-nav .site-nav-footer {
@@ -732,7 +737,7 @@ kbd kbd {
 
 .post .spoilers summary {
     background-color: var(--color-secondary);
-    list-style-image: url(/icons/orion/icon-plus-circle-white.svg);
+    list-style-image: url(/img/icons/orion/icon-plus-circle-white.svg);
     padding: 1em;
     margin-left: -1em;
     cursor: pointer;
@@ -745,16 +750,16 @@ kbd kbd {
 
 .post details[open].spoilers summary {
     background-color: var(--color-primary);
-    list-style-image: url(/icons/orion/icon-minus-circle-white.svg);
+    list-style-image: url(/img/icons/orion/icon-minus-circle-white.svg);
 }
 
 .post .spoilers summary::-webkit-details-marker {
-    background: url(/icons/orion/icon-plus-circle-white.svg);
+    background: url(/img/icons/orion/icon-plus-circle-white.svg);
     color: transparent;
 }
 
  .post details[open].spoilers summary::-webkit-details-marker {
-    background: url(/icons/orion/icon-minus-circle-white.svg);
+    background: url(/img/icons/orion/icon-minus-circle-white.svg);
 }
 
 .post audio,
@@ -859,6 +864,15 @@ kbd kbd {
 */
 .subscribe-urls {
     list-style: none;
+    padding-left: 0;
+}
+
+.accordion {
+    margin-top: 1.3em;
+}
+
+.accordion .tab {
+    background-color: var(--color-primary);
 }
 
 .accordion li {
@@ -877,7 +891,7 @@ kbd kbd {
 }
 
 .tab:after {
-    content: url(/icons/orion/icon-plus-circle-black.svg);
+    content: url(/img/icons/orion/icon-plus-circle-black.svg);
     position: absolute;
     top: 0;
     right: 0;
@@ -887,11 +901,11 @@ kbd kbd {
 }
 
 .tab.active {
-    background: rgba(0,0,0,0.3);
+    background-color: var(--color-secondary);
 }
 
 .tab.active:after {
-    content: url(/icons/orion/icon-minus-circle-black.svg); 
+    content: url(/img/icons/orion/icon-minus-circle-black.svg); 
 }
 
 .panel { 
@@ -932,6 +946,7 @@ kbd kbd {
         font-size: 24px;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 
+            "masthead empty" 
             "header main" 
             "header footer";
         row-gap: 0;
@@ -939,6 +954,14 @@ kbd kbd {
 
     .site-header {
         font-size: 24px;
+    }
+    
+    .header-flex {
+        grid-area: masthead;
+    }
+    
+    .site-nav {
+        grid-area: header;
         padding: 0;
     }
 
@@ -951,7 +974,7 @@ kbd kbd {
     }
 
     .site-main {
-        padding: 1.3em;
+        padding: 0 1.3em 1.3em 1.3em;
     }
 
 
@@ -979,8 +1002,7 @@ kbd kbd {
         max-height: none;
     }
 
-    .site-nav .episode-info,
-    .site-nav .site-nav-footer {
+    .site-nav .episode-info {
         margin-top: 1.3em;
     }
 
@@ -1010,6 +1032,8 @@ kbd kbd {
         top: 0.2em;       
     }
     
+    .icon-pause,
+    .icon-play,
     .icon-rss {
         top: 0.1em;       
     }
@@ -1021,7 +1045,6 @@ kbd kbd {
     */
     .headline {
         font-size: 1.5em;
-        margin-top: 3.9rem; /* todo: remove this and redo grid to align this below masthead on desktop */
     }
 
 
@@ -1048,10 +1071,6 @@ kbd kbd {
     /*
         EPISODE POST
     */
-    .post {
-        margin-top: 5.2rem;
-    }
-
     .post .youtubelist li {
         margin-top: 5.2rem;
     }
