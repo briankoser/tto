@@ -897,6 +897,10 @@ kbd kbd {
     margin-top: 3em;
 }
 
+.accordion img {
+    max-width: 85vw;
+}
+
 .tab {
     cursor: pointer;
     position: relative;
