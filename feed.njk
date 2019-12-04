@@ -53,7 +53,7 @@ permalink: /feed.rss
 		<itunes:image href="{{ metadata.cdn_url }}/img/logo-album.png" />
 		{%- for episode in collections.episodes | reverse -%}
 		<item>
-			<title>№ {{ episode.data.number }}: {{ episode.data.title }}</title>
+			<title>№ {{ episode.data.number }} {{ episode.data.title }}</title>
 			<link>{{ metadata.site_url }}/</link>
 			<guid isPermaLink="false">{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3</guid>
 			<description>{{ episode.data.description }}</description>
