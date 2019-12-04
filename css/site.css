@@ -145,16 +145,17 @@ body, .body {
     display: grid;
     grid-template-columns: .5rem 1fr .5rem;
     grid-template-areas: 
-        "header         header  header" 
-        "gutter-left    main    gutter-right" 
-        "footer         footer  footer";
-    row-gap: 2.6rem;
+        "masthead       masthead  masthead"
+        "nav            nav       nav"
+        "gutter-left    main      gutter-right" 
+        "footer         footer    footer";
+    row-gap: 1.3rem;
 }
 
 p,
 ul,
 ol {
-  margin-top: 0; 
+    margin-top: 0; 
 }
 
 p {
@@ -228,7 +229,7 @@ h6, .h6 {
 */
 button {
     background: var(--color-primary);
-    border: 1px solid var(--color-primary);
+    border: 2px solid var(--color-primary);
     border-radius: 10px;
     color: var(--color-white);
     cursor: pointer;
@@ -482,41 +483,58 @@ kbd kbd {
 /*
     SITE LAYOUT
 */
-.site-header,
-.site-header a,
+.header-flex,
+.header-flex a,
+.site-nav,
+.site-nav a,
 .site-footer,
 .site-footer a {
     text-decoration: none;
 }
 
-.site-header {
-    grid-area: header;
-    padding: 1em 0;
-}
-
-.site-header.active {
+.site-nav.active {
     padding: 1em 0 0 0;
 }
 
-.site-header a:hover {
+.site-nav a:hover {
     background-color: var(--color-secondary);
 }
 
-.site-header .masthead {
+.header-flex .masthead {
     font-size: 2em;
     margin-top: 0;
     display: none;
 }
 
-.site-header .menu-link {
+.header-flex .menu-link {
+    margin-top: 2.6rem;
     text-transform: uppercase;
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 0.65em;
+}
+
+.header-flex .menu-link.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.header-flex .menu-link.active .icon {
+    --layer1: var(--color-white);
+    --layer2: var(--color-white);
 }
 
 .header-flex {
+    grid-area: masthead;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
+}
+
+.site-nav {
+    grid-area: nav;
 }
 
 .site-main {
@@ -538,9 +556,9 @@ kbd kbd {
     margin: 0;
 }
 
+
 .site-nav-links,
 .site-nav-footer {
-    padding: 1em 0;
     font-weight: bold;
 }
 
@@ -951,13 +969,10 @@ kbd kbd {
             "header footer";
         row-gap: 0;
     }
-
-    .site-header {
-        font-size: 24px;
-    }
     
     .header-flex {
         grid-area: masthead;
+        flex-direction: row;
     }
     
     .site-nav {
@@ -965,8 +980,8 @@ kbd kbd {
         padding: 0;
     }
 
-    .site-header .masthead {
-        font-size: 3em;
+    .header-flex .masthead {
+        font-size: 5vw;
         display: block;
         line-height: 1em;
         text-align: right;
