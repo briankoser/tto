@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
     const linkListShortCode = require('./_includes/shortcodes/linklist-shortcode.js');
     const movieShortCode = require('./_includes/shortcodes/movie-shortcode.js');
     const movieListShortCode = require('./_includes/shortcodes/movielist-shortcode.js');
+    const siteHeaderShortCode = require('./_includes/shortcodes/siteheader-shortcode.js');
     const youtubeShortCode = require('./_includes/shortcodes/youtube-shortcode.js');
     const youtubeListShortCode = require('./_includes/shortcodes/youtubelist-shortcode.js');
 
@@ -25,8 +26,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("utcString", dateObj => dateObj.toUTCString().replace(' GMT', ''));
     eleventyConfig.addFilter("year", dateObj => dateObj.getFullYear());
 
-    eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
     eleventyConfig.addLayoutAlias('episode', 'layouts/episode.njk');
+    eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
+    eleventyConfig.addLayoutAlias('site', 'layouts/site.njk');
     
     eleventyConfig.addShortcode("boardGameList", boardGameListShortCode);
     eleventyConfig.addShortcode("bookList", bookListShortCode);
@@ -39,6 +41,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("linkList", linkListShortCode);
     eleventyConfig.addShortcode("movie", movieShortCode);
     eleventyConfig.addShortcode("movieList", movieListShortCode);
+    eleventyConfig.addShortcode("siteHeader", siteHeaderShortCode);
     eleventyConfig.addShortcode("youtube", youtubeShortCode);
     eleventyConfig.addShortcode("youtubeList", youtubeListShortCode);
 

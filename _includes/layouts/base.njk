@@ -10,11 +10,7 @@
         <link rel="stylesheet" href="/css/site.css" />
     </head>
     <body>
-        <header class="header-flex">
-            <img class="site-logo" src="/img/logo.svg">
-            <h1 class="masthead">Ten to One</h1>
-            <a id="site-nav-link" href="#site-nav" class="menu-link js-site-nav">{% icon 'menu-hamburger' %} Menu</a>
-        </header>
+        {% siteHeader name %}
         <nav id="site-nav" class="site-nav js-site-nav">
             <ol class="site-nav-links">
                 <li><a href="/">{% icon 'property' %} Home</a>
