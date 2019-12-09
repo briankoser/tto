@@ -501,7 +501,7 @@ kbd kbd {
 }
 
 .site-header .masthead {
-    font-size: 1.95313rem;
+    font-size: 8vw;
     margin-top: 0;
     display: none;
 }
@@ -533,8 +533,17 @@ kbd kbd {
     padding: 1rem;
 }
 
+.site-logo {
+    max-width: 300px;
+}
+
 .site-header.layout-site {
     flex-direction: row;
+}
+
+.site-header.layout-home .menu-link {
+    text-align: center;       
+    width: 100%;
 }
 
 .site-header.layout-site .menu-link {
@@ -961,13 +970,37 @@ kbd kbd {
 
 
 
+/*
+    TABLET STYLES
+*/
+@media screen and (min-width: 500px) {
+    .site-header {
+        flex-direction: row;
+    }
+    
+    .site-header .menu-link {
+        margin: 0 1rem;
+    }
+    
+    .site-header.layout-home .menu-link {
+        text-align: left;           
+        width: initial;
+    }
+
+    .site-header .masthead {
+        display: block;
+        line-height: 1em;
+        text-align: right;
+        font-style: italic;
+    }
+}
 
 
 
 /*
     DESKTOP STYLES
 */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 850px) {
     /*
         SITE GRID
     */
@@ -992,16 +1025,12 @@ kbd kbd {
         padding: 0;
     }
 
-    .site-header .masthead {
-        font-size: 5vw;
-        display: block;
-        line-height: 1em;
-        text-align: right;
-        font-style: italic;
-    }
-
     .site-main {
         padding: 0 1.3em 1.3em 1.3em;
+    }
+
+    .site-header .masthead {
+        font-size: 5vw;
     }
 
 
@@ -1081,7 +1110,6 @@ kbd kbd {
     */
     .episode-block {
         column-gap: 10px;
-        row-gap: 10px;
     }
 
     .episode-card .number ,
