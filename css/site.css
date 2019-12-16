@@ -284,9 +284,7 @@ ul.horizontal li {
     canvas, object, embed, img, audio, video, track, map, area, iframe
 */
 img {
-    height: auto;
     max-width: 96vw;
-    width: auto; 
 }
 
 audio {
@@ -531,14 +529,15 @@ kbd kbd {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-}
-
-.site-logo {
-    max-width: 300px;
+    width: 100vw;
 }
 
 .site-header.layout-site {
     flex-direction: row;
+}
+
+.site-header.layout-site .site-logo {
+    max-width: 200px;
 }
 
 .site-header.layout-home .menu-link {
@@ -1018,6 +1017,7 @@ kbd kbd {
     .site-header {
         grid-area: masthead;
         flex-direction: row;
+        width: initial;
     }
     
     .site-nav {
@@ -1031,6 +1031,10 @@ kbd kbd {
 
     .site-header .masthead {
         font-size: 5vw;
+    }
+
+    .site-header.layout-site .site-logo {
+        max-width: initial;
     }
 
 
