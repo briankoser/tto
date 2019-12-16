@@ -8,12 +8,14 @@ layout: home
     <div class="section">
         <h2>Latest</h2>
         {% episodeCard collections.episodes | last, collections.episodes | last | episodeReadableDate, collections.episodes | last | episodeMachineDate, metadata.site_url %}
+        <div class="more"><a href="/episodes">All Episodes</a> {% icon 'next' %}</div>
     </div>
 
-    {# <div class="section">
+    <div class="section">
         <h2>Recommended</h2>
-        episode card - latest recommended
-    </div> #}
+        {% episodeCard collections.recommended | last, collections.recommended | last | episodeReadableDate, collections.recommended | last | episodeMachineDate, metadata.site_url %}
+        <div class="more"><a href="/recommended">All Recommended Episodes</a> {% icon 'next' %}</div>
+    </div>
 </div>
 
 {# <div class="section">

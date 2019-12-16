@@ -369,32 +369,32 @@ kbd kbd {
     HELPER CLASSES
 */
 .hidden {
-  display: none !important
+    display: none !important
 }
 
 .invisible {
-  visibility: hidden
+    visibility: hidden
 }
 
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
 }
 
 .visuallyhidden.focusable:active, 
 .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
 }
 
 
@@ -602,7 +602,7 @@ kbd kbd {
 }
 
 .site-nav.active {
-    max-height: 26em;
+    max-height: 31em;
 }
 
 .site-nav .site-nav-links {
@@ -616,9 +616,10 @@ kbd kbd {
     padding: 1em 1em 1.3em 1em;
 }
 
-.site-nav .site-nav-episodes {
+.site-nav .site-nav-episodes .episode-block {
     background-color: var(--color-black);
     color: var(--color-primary);
+    margin-top: 1em;
     padding: 1.3em;
 }
 
@@ -640,8 +641,13 @@ kbd kbd {
 /*
     HOME
 */
-.home-episodes {
-    margin-top: 2.6rem;
+.home-episodes .section {
+    margin-top: 3.9rem;
+}
+
+.home-episodes .more {
+    margin-top: -1em;
+    text-align: right;
 }
 
 .home-episodes h2 {
