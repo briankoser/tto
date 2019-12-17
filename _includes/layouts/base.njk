@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>{% if number != null %}№ {{ number}} {% endif %} {% if title != null %}{{ title }} ·{% endif %} {{metadata.podcast_name}}</title>
-        <meta name="description" content="The home page for Ten to One, the podcast where Melissa and Brian Koser make top ten lists about everything.">
+        <meta name="description" content="Ten to One, the podcast where Melissa and Brian Koser make top ten lists about everything">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/modern-normalize.css" />
         <link rel="stylesheet" href="/css/site.css" />
@@ -18,6 +18,10 @@
         <meta name="msapplication-TileColor" content="#ffc40d">
         <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
         <meta name="theme-color" content="#fced7e">
+
+        <meta property="og:title" content="Ten to One" />
+        <meta property="og:description" content="The podcast where Melissa & Brian Koser make top ten lists about everything" />
+        <meta property="og:image" content="/img/favicons/android-chrome-512x512.png">
     </head>
     <body>
         {% siteHeader name %}
