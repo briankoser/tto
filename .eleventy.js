@@ -29,7 +29,9 @@ module.exports = function(eleventyConfig) {
         let day = dateObj.toLocaleString('en-US', {'day': '2-digit'}); // eg 01
         let month = dateObj.toLocaleString('en-US', {'month': 'short'}); // eg Mar
         let year = dateObj.toLocaleString('en-US', {'year': 'numeric'}); // eg 2020
-        return `${weekday}, ${day} ${month} ${year} 20:00:00 CST`;
+        let time = dateObj.toLocaleString('en-US', {'hour': '2-digit', 'minute': '2-digit', 'second': '2-digit'}).slice(0, 8);
+        let timeZone = dateObj.toLocaleString('en-US', {'timeZoneName': 'short'}).slice(-3);
+        return `${weekday}, ${day} ${month} ${year} ${time} ${timeZone}`;
     });
     eleventyConfig.addFilter("year", dateObj => dateObj.getFullYear());
 
