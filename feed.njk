@@ -15,8 +15,8 @@ permalink: /feed.rss
 		<atom:link href="{{ metadata.site_url }}/feed.rss" rel="self" type="application/rss+xml" />
 		<link>{{ metadata.site_url }}</link>
 		<description>{{ metadata.site_description }}</description>
-		<lastBuildDate>{{ page.date | utcString }} +0000</lastBuildDate>
-		<pubDate>{{ page.date | utcString }} +0000</pubDate>
+		<lastBuildDate>{{ page.date | rssDateString }}</lastBuildDate>
+		<pubDate>{{ page.date | rssDateString }}</pubDate>
 		<language>en-US</language>	
 		<copyright>Copyright © {{ page.date | year }} {{metadata.author_name}}</copyright>
 		<managingEditor>{{ metadata.author_email }} (Melissa Koser)</managingEditor>
@@ -63,7 +63,7 @@ permalink: /feed.rss
 			
 			<itunes:duration>{{ episode.data.duration }}</itunes:duration>
 			<itunes:explicit>no</itunes:explicit>
-			<itunes:keywords>top ten {{ episode.data.tags | rssTags | join(" ") }}</itunes:keywords>
+			<itunes:keywords>top, ten, {{ episode.data.tags | rssTags | join(", ") }}</itunes:keywords>
 			<itunes:block>no</itunes:block>
 		</item>
 		{% endfor %}

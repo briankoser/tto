@@ -23,7 +23,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("episodeMachineDate", episode => machineDate(episode.date));
 
     eleventyConfig.addFilter("rssTags", tags => tags.filter(tag => !['episodes'].includes(tag)));
-    eleventyConfig.addFilter("utcString", dateObj => dateObj.toUTCString().replace(' GMT', ''));
+    eleventyConfig.addFilter("rssDateString", dateObj => {
+        // when node updates toUTCString() to ECMA2018: return dateObj.toUTCString().replace(' GMT', '');
+        let weekday = dateObj.toLocaleString('en-US', {'weekday': 'short'}); // eg Mon
+        let day = dateObj.toLocaleString('en-US', {'day': '2-digit'}); // eg 01
+        let month = dateObj.toLocaleString('en-US', {'month': 'short'}); // eg Mar
+        let year = dateObj.toLocaleString('en-US', {'year': 'numeric'}); // eg 2020
+        return `${weekday}, ${day} ${month} ${year} 20:00:00 CST`;
+    });
     eleventyConfig.addFilter("year", dateObj => dateObj.getFullYear());
 
     eleventyConfig.addLayoutAlias('episode', 'layouts/episode.njk');
