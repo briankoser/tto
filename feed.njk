@@ -58,7 +58,7 @@ permalink: /feed.rss
 			<guid isPermaLink="false">{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3</guid>
 			<description>{{ episode.data.description }}</description>
 			<enclosure url="{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3" length="{{ episode.data.bytes }}" type="audio/mpeg" />
-			<pubDate>{{ episode.date | rssDateString }}</pubDate>
+			<pubDate>{{ episode.date | rssDateEpisodeString }}</pubDate>
 			<category>Podcasts</category>
 			
 			<itunes:duration>{{ episode.data.duration }}</itunes:duration>
