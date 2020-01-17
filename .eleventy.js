@@ -1,4 +1,6 @@
 module.exports = function(eleventyConfig) {
+    const { addHours, format, formatISO, formatRFC7231 } = require('date-fns');
+
     const boardGameListShortCode = require('./_includes/shortcodes/boardgamelist-shortcode.js');
     const bookListShortCode = require('./_includes/shortcodes/booklist-shortcode.js');
     const cdnImageShortCode = require('./_includes/shortcodes/cdnimage-shortcode.js');
@@ -14,33 +16,13 @@ module.exports = function(eleventyConfig) {
     const youtubeShortCode = require('./_includes/shortcodes/youtube-shortcode.js');
     const youtubeListShortCode = require('./_includes/shortcodes/youtubelist-shortcode.js');
 
-    let humanizeDate = dateObj => dateObj.toLocaleString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
-    eleventyConfig.addFilter("readableDate", humanizeDate);
-    eleventyConfig.addFilter("episodeReadableDate", episode => humanizeDate(episode.date));
-    
-    let machineDate = dateObj => dateObj.toISOString().slice(0, 10);
-    eleventyConfig.addFilter("machineDate", machineDate);
-    eleventyConfig.addFilter("episodeMachineDate", episode => machineDate(episode.date));
-
+    eleventyConfig.addFilter("getProperty", (object, property) => object[property]);
+    eleventyConfig.addFilter("machineDate", dateObject => formatISO(dateObject, { representation: "date" }));
+    eleventyConfig.addFilter("readableDate", dateObject => format(dateObject, "MMMM do, yyyy"));
+    eleventyConfig.addFilter("rssDate", dateObject => formatRFC7231(dateObject));
     eleventyConfig.addFilter("rssTags", tags => tags.filter(tag => !['episodes'].includes(tag)));
-    eleventyConfig.addFilter("rssDateString", dateObj => {
-        // when node updates toUTCString() to ECMA2018: return dateObj.toUTCString().replace(' GMT', '');
-        let weekday = dateObj.toLocaleString('en-US', {'weekday': 'short'}); // eg Mon
-        let day = dateObj.toLocaleString('en-US', {'day': '2-digit'}); // eg 01
-        let month = dateObj.toLocaleString('en-US', {'month': 'short'}); // eg Mar
-        let year = dateObj.toLocaleString('en-US', {'year': 'numeric'}); // eg 2020
-        let time = dateObj.toLocaleString('en-US', {'hour': '2-digit', 'minute': '2-digit', 'second': '2-digit'}).slice(0, 8); // 13:00:00
-        let timeZone = dateObj.toLocaleString('en-US', {'timeZoneName': 'short'}).slice(-3); // eg CMT
-        return `${weekday}, ${day} ${month} ${year} ${time} ${timeZone}`;
-    });
-    eleventyConfig.addFilter("rssDateEpisodeString", dateObj => {
-        let weekday = dateObj.toLocaleString('en-US', {'weekday': 'short'}); // eg Mon
-        let day = dateObj.toLocaleString('en-US', {'day': '2-digit'}); // eg 01
-        let month = dateObj.toLocaleString('en-US', {'month': 'short'}); // eg Mar
-        let year = dateObj.toLocaleString('en-US', {'year': 'numeric'}); // eg 2020
-        return `${weekday}, ${day} ${month} ${year} 20:00:00 CST`;
-    });
-    eleventyConfig.addFilter("year", dateObj => dateObj.getFullYear());
+    eleventyConfig.addFilter("setEpisodeReleaseTime", dateObject => addHours(dateObject, 20));
+    eleventyConfig.addFilter("year", dateObject => format(dateObject, 'yyyy'));
 
     eleventyConfig.addLayoutAlias('episode', 'layouts/episode.njk');
     eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');

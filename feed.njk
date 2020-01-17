@@ -1,6 +1,7 @@
 ---
 layout: false
 permalink: /feed.rss
+date: Last Modified
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -15,8 +16,8 @@ permalink: /feed.rss
 		<atom:link href="{{ metadata.site_url }}/feed.rss" rel="self" type="application/rss+xml" />
 		<link>{{ metadata.site_url }}</link>
 		<description>{{ metadata.site_description }}</description>
-		<lastBuildDate>{{ page.date | rssDateString }}</lastBuildDate>
-		<pubDate>{{ page.date | rssDateString }}</pubDate>
+		<lastBuildDate>{{ page.date | rssDate }}</lastBuildDate>
+		<pubDate>{{ page.date | rssDate }}</pubDate>
 		<language>en-US</language>	
 		<copyright>Copyright © {{ page.date | year }} {{metadata.author_name}}</copyright>
 		<managingEditor>{{ metadata.author_email }} (Melissa Koser)</managingEditor>
@@ -58,7 +59,7 @@ permalink: /feed.rss
 			<guid isPermaLink="false">{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3</guid>
 			<description>{{ episode.data.description }}</description>
 			<enclosure url="{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3" length="{{ episode.data.bytes }}" type="audio/mpeg" />
-			<pubDate>{{ episode.date | rssDateEpisodeString }}</pubDate>
+			<pubDate>{{ episode.date | setEpisodeReleaseTime | rssDate }}</pubDate>
 			<category>Podcasts</category>
 			
 			<itunes:duration>{{ episode.data.duration }}</itunes:duration>

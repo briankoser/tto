@@ -6,7 +6,7 @@ layout: site
 {%- for episode in collections.recommended | reverse -%}
     <article class="h-entry">
         <h2><a href="{{ episode.url }}" class="p-name">№ {{ episode.data.number }} {{ episode.data.title }}</a></h2>
-        <p><time class="dt-published" datetime='{{ episode.date | machineDate }}'>{{ episode.date | readableDate }}</time> · {{ episode.data.description }}</p>
+        <p><time class="dt-published" datetime='{{ episode.date | setEpisodeReleaseTime | machineDate }}'>{{ episode.date | setEpisodeReleaseTime | readableDate }}</time> · {{ episode.data.description }}</p>
     </article>
 {%- endfor -%}
 </div>
