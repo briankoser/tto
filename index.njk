@@ -12,9 +12,9 @@ layout: home
     </div>
 
     <div class="section">
-        <h2>Recommended</h2>
-        {% episodeCard collections.recommended | last, collections.recommended | last | getProperty('date') | setEpisodeReleaseTime | readableDate, collections.recommended | last | getProperty('date') | setEpisodeReleaseTime | machineDate, metadata.site_url %}
-        <div class="more"><a href="/recommended">All Recommended</a> {% icon 'next' %}</div>
+        <h2>Featured</h2>
+        {% episodeCard collections.featured | last, collections.featured | last | getProperty('date') | setEpisodeReleaseTime | readableDate, collections.featured | last | getProperty('date') | setEpisodeReleaseTime | machineDate, metadata.site_url %}
+        <div class="more"><a href="/featured">All Featured</a> {% icon 'next' %}</div>
     </div>
 </div>
 

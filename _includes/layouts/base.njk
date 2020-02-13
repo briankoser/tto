@@ -33,7 +33,7 @@
             </ol>
             <div class="site-nav-episodes">
                 {% episodeBlock collections.episodes | last, "Latest", metadata.cdn_url %}
-                {% episodeBlock collections.recommended | last, "Recommended", metadata.cdn_url %}
+                {% episodeBlock collections.featured | last, "Featured", metadata.cdn_url %}
             </div>
             <div class="site-nav-footer">
                 <a href="/feed.rss">{% icon 'rss' %} RSS</a>
