@@ -1113,6 +1113,10 @@ kbd kbd {
         font-size: 1.5em;
     }
 
+    .home-episodes h2 .icon {
+        margin-left: -1.1em;
+    }
+
 
 
     /*
