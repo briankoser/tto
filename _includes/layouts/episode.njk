@@ -4,6 +4,9 @@ layout: site
 <article class="post h-entry">
     <header>
         <h1 class="post-title p-name">№ {{ number }} {{ title }}</h1>
+        {% for tag in tags %}
+            {% if tag === 'featured' %} {% icon 'ribbon' %} {% endif %}
+        {% endfor %}
         <time class="post-date dt-published" datetime='{{ date | setEpisodeReleaseTime | machineDate }}'>{{ date | setEpisodeReleaseTime | readableDate }}</time>
     </header>
     

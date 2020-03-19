@@ -6,13 +6,13 @@ layout: home
 
 <div class="home-episodes">
     <div class="section">
-        <h2>Latest</h2>
+        <h2>{% icon 'new' %} Latest</h2>
         {% episodeCard collections.episodes | last, collections.episodes | last | getProperty('date') | setEpisodeReleaseTime | readableDate, collections.episodes | last | getProperty('date') | setEpisodeReleaseTime | machineDate, metadata.site_url %}
         <div class="more"><a href="/episodes">All Episodes</a> {% icon 'next' %}</div>
     </div>
 
     <div class="section">
-        <h2>Featured</h2>
+        <h2>{% icon 'ribbon' %} Featured</h2>
         {% episodeCard collections.featured | last, collections.featured | last | getProperty('date') | setEpisodeReleaseTime | readableDate, collections.featured | last | getProperty('date') | setEpisodeReleaseTime | machineDate, metadata.site_url %}
         <div class="more"><a href="/featured">All Featured</a> {% icon 'next' %}</div>
     </div>
