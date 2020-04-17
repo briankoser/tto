@@ -2,4 +2,4 @@
   for = "/*"
 
   [headers.values]
-    Content-Security-Policy-Report-Only = "default-src 'none'; base-uri 'self'; connect-src 'self' https://commento.io https://www.youtube.com; font-src https://s3.amazonaws.com; form-action 'self'; img-src 'self' data:image/svg+xml https://cdn.commento.io; media-src https://s3.amazonaws.com https://www.youtube.com; script-src 'self' https://cdn.commento.io; style-src 'self' https://cdn.commento.io 'unsafe-inline'" 
+    Content-Security-Policy-Report-Only = "default-src 'self'; base-uri 'self'; connect-src 'self' https://commento.io https://www.youtube.com; font-src https://s3.amazonaws.com; form-action 'self'; frame-src https://www.youtube.com; img-src 'self' data: https://cdn.commento.io; media-src https://s3.amazonaws.com https://www.youtube.com; script-src 'self' https://cdn.commento.io; style-src 'self' https://cdn.commento.io 'unsafe-inline'" 
