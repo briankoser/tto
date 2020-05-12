@@ -1,7 +1,8 @@
 {
     "author_name": "Melissa and Brian Koser",
     "author_email": "tto@koser.us",
-    "cdn_url": "https://s3.amazonaws.com/ttocdn.koser.us",
+    "mp3_cdn_url": "https://s3.amazonaws.com/ttocdn.koser.us",
+    "img_cdn_url": "https://s3.amazonaws.com/ttocdn.koser.us/img",
     "podcast_name": "Ten to One",
     "site_description": "Melissa and Brian Koser make top ten lists about everything.",
     "site_url": "https://tto.koser.us"
