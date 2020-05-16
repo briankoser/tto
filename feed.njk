@@ -23,7 +23,7 @@ date: Last Modified
 		<managingEditor>{{ metadata.author_email }} (Melissa Koser)</managingEditor>
 		<webMaster>{{ metadata.author_email }} (Brian Koser)</webMaster>
 		<image>
-			<url>{{ metadata.cdn_url }}/img/logo-album.png</url>
+			<url>{{ metadata.img_cdn_url }}/logo-album.png</url>
 			<title>{{ metadata.podcast_name }}</title>
 			<link>{{ metadata.site_url }}</link>
 		</image>
@@ -51,14 +51,14 @@ date: Last Modified
 		</itunes:owner>
 		<itunes:block>no</itunes:block>
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:image href="{{ metadata.cdn_url }}/img/logo-album.png" />
+		<itunes:image href="{{ metadata.img_cdn_url }}/logo-album.png" />
 		{%- for episode in collections.episodes | reverse -%}
 		<item>
 			<title>№ {{ episode.data.number }} {{ episode.data.title }}</title>
 			<link>{{ metadata.site_url }}/</link>
-			<guid isPermaLink="false">{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3</guid>
+			<guid isPermaLink="false">{{ metadata.mp3_cdn_url }}/{{ episode.fileSlug }}.mp3</guid>
 			<description>{{ episode.data.description }}</description>
-			<enclosure url="{{ metadata.cdn_url }}/{{ episode.fileSlug }}.mp3" length="{{ episode.data.bytes }}" type="audio/mpeg" />
+			<enclosure url="{{ metadata.mp3_cdn_url }}/{{ episode.fileSlug }}.mp3" length="{{ episode.data.bytes }}" type="audio/mpeg" />
 			<pubDate>{{ episode.date | setEpisodeReleaseTime | rssDate }}</pubDate>
 			<category>Podcasts</category>
 			
