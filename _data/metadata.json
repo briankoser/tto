@@ -5,5 +5,6 @@
     "img_cdn_url": "https://s3.amazonaws.com/ttocdn.koser.us/img",
     "podcast_name": "Ten to One",
     "site_description": "Ten to One, the podcast where Melissa and Brian Koser make top ten lists about everything",
-    "site_url": "https://tto.koser.us"
+    "site_url": "https://tto.koser.us",
+    "facebook_image": "https://tto.koser.us/img/logo-facebook.png"
 }
