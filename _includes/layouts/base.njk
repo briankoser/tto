@@ -1,10 +1,10 @@
-<!doctype html>
+45>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>{% if number != null %}№ {{ number}} {% endif %} {% if title != null %}{{ title }} ·{% endif %} {{metadata.podcast_name}}</title>
-        <meta name="description" content="Ten to One, the podcast where Melissa and Brian Koser make top ten lists about everything">
+        <meta name="description" content="{% if description %} {{ description }} {% else %} {{metadata.site_description}} {% endif %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/modern-normalize.css" />
         <link rel="stylesheet" href="/css/site.css" />
@@ -19,8 +19,11 @@
         <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
         <meta name="theme-color" content="#fced7e">
 
-        <meta property="og:title" content="Ten to One" />
-        <meta property="og:description" content="The podcast where Melissa & Brian Koser make top ten lists about everything" />
+        <meta property="og:title" content="{%- if number != null %}№ {{ number}} {{title}} {%- elif title != null -%}{{ title }} {%- else -%} {{metadata.podcast_name}} {%- endif %}" />
+        <meta property="og:description" content="{% if description -%} {{ description }} {%- else -%} {{metadata.site_description}} {%- endif %}" />
+        <meta property="og:image" content="/img/logo-facebook.png" />
+        <meta property="og:image:width" content="1080" />
+        <meta property="og:image:height" content="644" />
     </head>
     <body>
         {% siteHeader name %}
