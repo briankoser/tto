@@ -319,7 +319,8 @@ a {
   white-space: nowrap;
 }
 
-h2 a {
+h2 > a {
+    line-height: 1em;
     white-space: initial;
 }
 
