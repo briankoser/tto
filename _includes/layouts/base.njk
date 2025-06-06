@@ -31,7 +31,7 @@
         <meta name="twitter:creator" content="@bmkoser">
         <meta name="twitter:title" content="{%- if number != null %}№ {{ number}} {{title}} {%- elif title != null -%}{{ title }} {%- else -%} {{metadata.podcast_name}} {%- endif %}">
         <meta name="twitter:description" content="{% if description -%} {{ description }} {%- else -%} {{metadata.site_description}} {%- endif %}">
-        <meta name="twitter:image" content="{{ metadata.facebook_image }}">
+        <meta name="twitter:image" content="{{ metadata.twitter_image }}">
     </head>
     <body>
         {% siteHeader name %}
