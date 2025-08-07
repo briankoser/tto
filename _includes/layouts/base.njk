@@ -28,12 +28,14 @@
         <meta property="og:image:height" content="644" />
 
         <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@bmkoser">
         <meta name="twitter:creator" content="@bmkoser">
         <meta name="twitter:title" content="{%- if number != null %}№ {{ number}} {{title}} {%- elif title != null -%}{{ title }} {%- else -%} {{metadata.podcast_name}} {%- endif %}">
         <meta name="twitter:description" content="{% if description -%} {{ description }} {%- else -%} {{metadata.site_description}} {%- endif %}">
         <meta name="twitter:image" content="{{ metadata.twitter_image }}">
         <meta property="twitter:image:src" content="{{ metadata.twitter_image }}">
-/>
+
+        <meta name="twitter:image:alt" content="TTO logo">
     </head>
     <body>
         {% siteHeader name %}
