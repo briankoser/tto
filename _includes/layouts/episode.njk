@@ -11,6 +11,10 @@ layout: site
     </header>
     
     <div class="e-content">
+        {% if video %}
+            {% youtube video %}
+        {% endif %}
+        
         <audio src="{{ metadata.mp3_cdn_url }}/{{ page.fileSlug }}.mp3" preload="metadata" controls>
         </audio>
         
