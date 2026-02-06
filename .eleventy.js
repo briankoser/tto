@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("rssDate", dateObject => formatRFC7231(dateObject));
     eleventyConfig.addFilter("rssTags", tags => tags.filter(tag => !['episodes'].includes(tag)));
     eleventyConfig.addFilter("setEpisodeReleaseTime", dateObject => addHours(dateObject, 20));
+    eleventyConfig.addFilter("split", (stringToSplit, delim) => stringToSplit.split(delim));
     eleventyConfig.addFilter("year", dateObject => format(dateObject, 'yyyy'));
 
     eleventyConfig.addLayoutAlias('episode', 'layouts/episode.njk');

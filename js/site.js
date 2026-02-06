@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     let activateAudioButton = clickEvent => {
         console.log(clickEvent);
-        let audio = clickEvent.target.closest('.js-episode-block').querySelector('audio');
+        let audio = clickEvent.target.closest('.js-poster').querySelector('.player audio');
         let buttons = clickEvent.target.closest('.js-media-buttons');
 
         if (audio.paused) {

@@ -7,5 +7,17 @@
     "site_description": "Ten to One, the podcast where Melissa and Brian Koser make top ten lists about everything",
     "site_url": "https://tto.koser.us",
     "facebook_image": "https://tto.koser.us/img/logo-facebook.png",
-    "twitter_image": "https://tto.koser.us/img/favicons/apple-touch-icon.png"
+    "twitter_image": "https://tto.koser.us/img/favicons/apple-touch-icon.png",
+    "host_poster_last_name_offset": {
+        "Brian Koser": 165,
+        "Melissa Koser": 215,
+        "Aaron Smith": 185,
+        "Jay Champagne": 120,
+        "Johanna Wilson": 250,
+        "Luke Koser": 130,
+        "Matt Koser": 140,
+        "Megan Koser": 195,
+        "Rachel Smith": 195,
+        "Zach Koser": 140
+    }
 }
