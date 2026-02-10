@@ -11,57 +11,8 @@ credits:
     - Garish colors provided by THE CIRCUS
 ---
 <article class="post h-entry">
-    <article class="poster js-poster">
-        <div class="hosts {{ 'guests' if guests else '' }}">
-            {% for host in hosts %}
-            <div class="host">
-                <svg height="3em" >
-                    <defs>
-                        <path id="hostNamePath" d="M10,60 A 40 15 5 0 1 50 450"/>
-                    </defs>
-                    <text fill="var(--color-yellow)">
-                        <textPath xlink:href="#hostNamePath" class="first">{{host | split(' ') | first }}</textPath>
-                        <textPath xlink:href="#hostNamePath" class="last" startOffset="{{ metadata.host_poster_last_name_offset[host] }}">{{host | split(' ') | last }}</textPath>
-                    </text>
-                </svg>
-            </div> 
-            {% endfor %}
-        </div>
+    {% episodePoster guests, hosts, metadata.host_poster_last_name_offset, number, title, date | setEpisodeReleaseTime | machineDate, date | setEpisodeReleaseTime | readableDate | upper, description, metadata.mp3_cdn_url, page.fileSlug, credits %}
 
-        <section class="number">
-            <svg width="100%" height="300">
-                <defs>
-                    <mask id="text-mask-1" x="0" y="0">
-                        <text x="0" y="260">{{number}}</text>
-                    </mask>
-                </defs>
-
-                <image width="700" xlink:href="/img/poster-number-background8.png" mask="url(#text-mask-1)"/>
-            </svg>
-        </section>
-        <section class="title">
-            <div class="in">in</div>
-            <div class="title-text-parent">
-                <div class="title-text">{{ title }}</div>
-            </div>
-        </section>
-        <section class="contents">
-            <div class="js-episode-block">
-                <div class="media-buttons js-media-buttons" style="font-size:5em; float:right; padding:0 0.25em;">
-                    <div class="play js-media-button"><svg class="icon icon-play"><use xlink:href="/img/icons/orion-sprite.svg#play"></use></svg></div>
-                    <div class="pause js-media-button hidden"><svg class="icon icon-pause"><use xlink:href="/img/icons/orion-sprite.svg#pause"></use></svg></div>
-                </div>
-            </div>
-            <span>On devices everywhere <time class="post-date dt-published" datetime='{{ date | setEpisodeReleaseTime | machineDate }}'>{{ date | setEpisodeReleaseTime | readableDate | upper }}</time></span>
-            
-            <p class="description">{{ description }}</p>
-        </section>
-        <section class="player">
-            <audio src="{{ metadata.mp3_cdn_url }}/{{ page.fileSlug }}.mp3" preload="metadata" controls></audio>
-        </section>
-        <section class="credits">{{ credits | join(" · ") }}</section>
-    </article>
-    
     <div class="e-content">
         {% if video %}
             {% youtube video %}

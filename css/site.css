@@ -172,12 +172,11 @@ body, .body {
     width: 100%;
 
     display: grid;
-    grid-template-columns: .5rem 1fr .5rem;
     grid-template-areas: 
-        "masthead       masthead  masthead"
-        "nav            nav       nav"
-        "gutter-left    main      gutter-right" 
-        "footer         footer    footer";
+        "masthead"
+        "nav"
+        "main" 
+        "footer";
     row-gap: 1.3rem;
 }
 
@@ -749,7 +748,7 @@ kbd kbd {
 
 .poster .title {
     font-family: Lobster, cursive;
-    margin: -3em 0 4em 0;
+    margin: -3em 0 0 0;
     transform: skew(0, -15deg);
     line-height: 1;
     position: relative;
@@ -778,6 +777,11 @@ kbd kbd {
     text-align: center;
 }
 
+.poster .media-buttons {
+    font-size: 5em;
+    float: none;
+}
+
 .poster audio {
     display: block;
     margin: 0 auto;
@@ -797,10 +801,16 @@ kbd kbd {
 
     .poster .title {
         margin-left: 3em;
+        margin-bottom: 4em;
     }
 
     .poster .hosts {
-        margin-left: 4em;
+        margin-left: calc(400px - 4em);
+    }
+
+    .poster .media-buttons {
+        float: right;
+        padding: 0.25em;
     }
 }
 
