@@ -15,7 +15,7 @@ credits:
         <div class="hosts {{ 'guests' if guests else '' }}">
             {% for host in hosts %}
             <div class="host">
-                <svg height="230px">
+                <svg height="3em" >
                     <defs>
                         <path id="hostNamePath" d="M10,60 A 40 15 5 0 1 50 450"/>
                     </defs>
@@ -68,7 +68,7 @@ credits:
         {% endif %}
 
         <details class="spoilers">
-            <summary>Show Notes (expand)</summary>
+            <summary>Show Notes (click or tap to expand)</summary>
             {{ content | safe }}
 
             {% if notes or youtubeNotes %}

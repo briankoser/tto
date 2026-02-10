@@ -38,6 +38,14 @@
 }
 
 @font-face {
+    font-family: ConcourseBlack;
+    font-display: swap;
+    src:
+        local("Concourse T8"),
+        url("https://s3.amazonaws.com/fonts.koser.us/concourse/concourse_8_regular.woff2") format("woff2");
+}
+
+@font-face {
     font-family: OpenSansNumero;
     src:
         local("Open Sans"),
@@ -306,11 +314,6 @@ ul.horizontal li {
 */
 img {
     max-width: 96vw;
-}
-
-audio {
-    border-radius: 10px;
-    width: 100%;
 }
 
 
@@ -703,11 +706,9 @@ kbd kbd {
 
 .poster .hosts {
     list-style: none;
-    font-size: 3em;
+    font-size: clamp(40px, 40px + 2vw, 70px);
     color: var(--color-yellow);
-    text-align: right;
     margin-bottom: 0;
-    margin-left: 8rem;
     position: relative;
     z-index: 2;
 }
@@ -722,7 +723,7 @@ kbd kbd {
 
 .poster .hosts .last {
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: ConcourseBlack, Concourse, sans-serif;
 }
 
 .poster .host svg {
@@ -746,15 +747,9 @@ kbd kbd {
     letter-spacing: -0.15em;
 }
 
-@media screen and (min-width: 630px) {
-    .poster .number svg text {
-        font-size: 378px;
-    }
-}
-
 .poster .title {
     font-family: Lobster, cursive;
-    margin: -3em 0 4em 3em;
+    margin: -3em 0 4em 0;
     transform: skew(0, -15deg);
     line-height: 1;
     position: relative;
@@ -766,29 +761,48 @@ kbd kbd {
 }
 
 .poster .title-text {
-  font-size: 3em;
-  font-family: Lobster, Impact;
+    font-size: 3em;
+    font-family: Lobster, sans-serif;
 }
 
-.poster .title-text:first-child{
-  -webkit-text-stroke: 0.03em var(--color-yellow);
-  -webkit-text-fill-color: var(--color-red);
+.poster .title-text:first-child {
+    -webkit-text-stroke: 0.03em var(--color-yellow);
+    -webkit-text-fill-color: var(--color-red);
 }
 
 .poster .title-text:last-child{
-  color: var(--color-red);
+    color: var(--color-red);
 }
 
 .poster .contents {
     text-align: center;
 }
 
+.poster audio {
+    display: block;
+    margin: 0 auto;
+    width: 88%;
+}
+
 .poster .credits {
     font-size: 70%;
     margin-top: 2em;
-    padding: 0.3em;
+    padding: 0.5em;
 }
 
+@media screen and (min-width: 630px) {
+    .poster .number svg text {
+        font-size: 378px;
+    }
+
+    .poster .title {
+        margin-left: 3em;
+    }
+
+    .poster .hosts {
+        margin-left: 4em;
+    }
+}
 
 
 
