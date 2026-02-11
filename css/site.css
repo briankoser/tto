@@ -522,7 +522,7 @@ kbd kbd {
 }
 
 .site-header .masthead {
-    font-size: 8vw;
+    font-size: 9vw;
     margin-top: 0;
     display: none;
 }
@@ -549,18 +549,19 @@ kbd kbd {
     grid-area: masthead;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 1em;
     padding: 1rem;
     width: 100vw;
+    position: sticky;
+    top: -1px;
+    background-color: hsl(53, 95%, 74%, 90%);
+    z-index: 9;
 }
 
 .site-header.layout-site {
     flex-direction: row;
-}
-
-.site-header.layout-site .site-logo {
-    max-width: 200px;
 }
 
 .site-header.layout-home .menu-link {
@@ -572,12 +573,17 @@ kbd kbd {
     margin: 0 1rem;
 }
 
+.site-logo {
+    width: 14vw;
+}
+
 .site-nav {
     grid-area: nav;
 }
 
 .site-main {
     grid-area: main;
+    padding: 0 1.3em 1.3em 1.3em;
 }
 
 .site-footer {
@@ -1152,7 +1158,6 @@ kbd kbd {
     .site-header .masthead {
         display: block;
         line-height: 1em;
-        text-align: right;
         font-style: italic;
     }
 }
@@ -1169,9 +1174,9 @@ kbd kbd {
     body, .body {
         height: 100vh;
         font-size: 24px;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
         grid-template-areas: 
-            "masthead empty" 
+            "masthead masthead" 
             "header main" 
             "header footer";
         row-gap: 0;
@@ -1186,14 +1191,6 @@ kbd kbd {
     .site-nav {
         grid-area: header;
         padding: 0;
-    }
-
-    .site-main {
-        padding: 0 1.3em 1.3em 1.3em;
-    }
-
-    .site-header .masthead {
-        font-size: 5vw;
     }
 
 

@@ -20,12 +20,12 @@ module.exports = function episodeCardShortCode (guests, hosts, host_poster_last_
         <section class="number">
             <svg width="100%" height="300">
                 <defs>
-                    <mask id="text-mask-1" x="0" y="0">
+                    <mask id="text-mask-${number}" x="0" y="0">
                         <text x="0" y="260">${number}</text>
                     </mask>
                 </defs>
 
-                <image width="700" xlink:href="/img/poster-number-background8.png" mask="url(#text-mask-1)"/>
+                <image width="700" xlink:href="/img/poster-number-background8.png" mask="url(#text-mask-${number})"/>
             </svg>
         </section>
         <section class="title">
