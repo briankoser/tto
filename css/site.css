@@ -174,8 +174,8 @@ body, .body {
     display: grid;
     grid-template-areas: 
         "masthead"
-        "nav"
         "main" 
+        "nav"
         "footer";
     row-gap: 1.3rem;
 }
@@ -203,15 +203,6 @@ figure {
     HEADINGS
     hgroup, h1, h2, h3, h4, h5, h6
 */
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child {
-  margin: 0; 
-}
-
 h1, .h1 {
   font-size: 1.95313rem;
   line-height: 1.95rem;
@@ -599,6 +590,7 @@ kbd kbd {
 .site-footer ol {
     list-style: none;
     margin: 0;
+    padding-left: 0;
 }
 
 
@@ -618,20 +610,6 @@ kbd kbd {
 .site-nav {
     background-color: var(--color-primary);
     font-size: 1.5625rem;
-    -webkit-transition: all 0.3s ease-in-out;  
-       -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-}
-
-.js .site-nav {
-    overflow: hidden;
-    max-height: 0;
-}
-
-.site-nav.active {
-    max-height: 31em;
 }
 
 .site-nav .site-nav-links {
@@ -800,6 +778,13 @@ kbd kbd {
     padding: 0.5em;
 }
 
+.poster-parent {
+  display: flex;
+  gap: 1.3em;
+  flex-flow: column;
+}
+
+
 @media screen and (min-width: 630px) {
     .poster .number svg text {
         font-size: 378px;
@@ -820,6 +805,11 @@ kbd kbd {
     }
 }
 
+@media screen and (min-width: 1400px) {
+    .poster-parent {
+        flex-flow: row;
+    }
+}
 
 
 
@@ -1174,7 +1164,7 @@ kbd kbd {
     body, .body {
         height: 100vh;
         font-size: 24px;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 6fr;
         grid-template-areas: 
             "masthead masthead" 
             "header main" 
@@ -1214,20 +1204,12 @@ kbd kbd {
         display: none;
     }
 
-    .js .site-nav {
-        max-height: none;
-    }
-
     .site-nav .episode-info {
         margin-top: 1.3em;
     }
 
     .site-footer {
         padding: 3em;
-    }
-
-    .site-footer ol {
-        float: right;
     }
 
 

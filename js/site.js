@@ -4,19 +4,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-    /* SITE NAV */
-    document.querySelector('body').classList.add('js');
-    let siteNavPanes = document.querySelectorAll('.js-site-nav');
-    let menuLink = document.querySelector('#site-nav-link');
-    menuLink.addEventListener('click', clickEvent => {
-        Array.from(siteNavPanes).forEach(pane => {
-            pane.classList.toggle('active');
-        });
-        return false;
-    });
-
-
-
     /* AUDIO */
     async function playAudio(audio, buttons) {
         try {

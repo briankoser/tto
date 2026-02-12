@@ -39,26 +39,25 @@
     </head>
     <body>
         {% siteHeader name %}
-        <nav id="site-nav" class="site-nav js-site-nav">
+        <main class="site-main">
+            {{ content | safe }}
+        </main>
+        <nav id="site-nav" class="site-nav">
             <ol class="site-nav-links">
                 <li><a href="/">{% icon 'property' %} Home</a>
                 <li><a href="/episodes/">{% icon 'microphone' %} Episodes</a>
                 <li><a href="/about/">{% icon 'user-group' %} About</a>
                 <li><a href="/subscribe/">{% icon 'headphones-user' %} Subscribe</a>
+                <li><a href="/feed.rss">{% icon 'rss' %} RSS</a>
+                <li><a href="mailto:tto@koser.us">{% icon 'mail' %} tto@koser.us</a>
             </ol>
-            <div class="site-nav-footer">
-                <a href="/feed.rss">{% icon 'rss' %} RSS</a>
-                <a href="mailto:tto@koser.us">{% icon 'mail' %} tto@koser.us</a>
-            </div>
         </nav>
-        <main class="site-main">
-            {{ content | safe }}
-        </main>
         <footer class="site-footer">
             <ol>
-                <li>{% icon 'podcast' %} Podcast by <a class="h-card" href="http://koser.us/melissa">Melissa</a> & <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
-                <li>{% icon 'design' %} Website by <a class="h-card" href="http://koser.us/brian">Brian Koser</a>
+                <li>{% icon 'podcast' %} Podcast by <a class="h-card" href="http://koser.us">Brian</a> & <a class="h-card" href="http://koser.us">Melissa Koser</a>
+                <li>{% icon 'design' %} Website by <a class="h-card" href="http://koser.us">Brian Koser</a>
                 <li>{% icon 'color-palette' %} Logo by Matt Koser
+                <li>{% icon 'headphones-user' %} Music by Luke Koser
             </ol>
         </footer>
         <script src="/js/site.js"></script>
