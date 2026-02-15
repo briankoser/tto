@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
     const { addHours, format, formatISO, formatRFC7231 } = require('date-fns');
+    const util = require('util');
 
     const boardGameListShortCode = require('./_includes/shortcodes/boardgamelist-shortcode.js');
     const bookListShortCode = require('./_includes/shortcodes/booklist-shortcode.js');
@@ -7,6 +8,7 @@ module.exports = function(eleventyConfig) {
     const episodeBlockShortCode = require('./_includes/shortcodes/episodeblock-shortcode.js');
     const episodeCardShortCode = require('./_includes/shortcodes/episodecard-shortcode.js');
     const episodeInlineShortCode = require('./_includes/shortcodes/episodeinline-shortcode.js');
+    const episodeMiniPosterShortCode = require('./_includes/shortcodes/episodeminiposter-shortcode.js');
     const episodePosterShortCode = require('./_includes/shortcodes/episodeposter-shortcode.js');
     const iconShortCode = require('./_includes/shortcodes/icon-shortcode.js');
     const listShortCode = require('./_includes/shortcodes/list-shortcode.js');
@@ -17,6 +19,7 @@ module.exports = function(eleventyConfig) {
     const youtubeShortCode = require('./_includes/shortcodes/youtube-shortcode.js');
     const youtubeListShortCode = require('./_includes/shortcodes/youtubelist-shortcode.js');
 
+    eleventyConfig.addFilter('dump', value => util.inspect(value));
     eleventyConfig.addFilter("getProperty", (object, property) => object[property]);
     eleventyConfig.addFilter("machineDate", dateObject => formatISO(dateObject, { representation: "date" }));
     eleventyConfig.addFilter("readableDate", dateObject => format(dateObject, "MMMM do, yyyy"));
@@ -36,6 +39,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("episodeCard", episodeCardShortCode);
     eleventyConfig.addShortcode("episodeBlock", episodeBlockShortCode);
     eleventyConfig.addShortcode("episodeInline", episodeInlineShortCode);
+    eleventyConfig.addShortcode("episodeMiniPoster", episodeMiniPosterShortCode);
     eleventyConfig.addShortcode("episodePoster", episodePosterShortCode);
     eleventyConfig.addShortcode("icon", iconShortCode);
     eleventyConfig.addShortcode("list", listShortCode);
