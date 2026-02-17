@@ -681,6 +681,12 @@ kbd kbd {
 /*
     POSTER
 */
+.poster-parent {
+  display: flex;
+  gap: 1.3em;
+  flex-flow: column;
+}
+
 .poster {
     background-color: var(--color-blue);
     max-width: 600px;
@@ -778,12 +784,6 @@ kbd kbd {
     padding: 0.5em;
 }
 
-.poster-parent {
-  display: flex;
-  gap: 1.3em;
-  flex-flow: column;
-}
-
 
 @media screen and (min-width: 630px) {
     .poster .number svg text {
@@ -809,6 +809,60 @@ kbd kbd {
     .poster-parent {
         flex-flow: row;
     }
+}
+
+
+
+
+
+/*
+    MINI POSTER
+*/
+.mini-poster-parent {
+  display: flex;
+  gap: 1.3em;
+  flex-flow: wrap;
+}
+
+.mini-poster {
+    background-color: var(--color-blue);
+    height: 300px;
+    width: 200px;
+    border: solid 4px var(--color-navy);
+}
+
+.mini-poster .number {
+    font-family: "Courier Prime", monospace;
+    font-size: 122px;
+    letter-spacing: -14px;
+    position: relative;
+    z-index: 1;
+}
+
+.mini-poster.under-three-digits .number {
+    text-align: center;
+}
+
+.mini-poster .title {
+    margin: -43px 0 10px 10px;
+    line-height: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.mini-poster .title a {
+    color: var(--color-yellow);
+}
+
+.mini-poster .link {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.mini-poster a {
+    text-decoration: none;
+    text-wrap: wrap;
 }
 
 
@@ -1006,33 +1060,8 @@ kbd kbd {
     margin-bottom: 3.9rem;
 }
 
-
 .post footer {
     margin-top: 3.9rem;
-}
-
-
-
-
-
-/*
-    EPISODE LIST
-*/
-.episode-list h2 {
-    margin-top: 2.6rem;
-}
-
-.episode-list a {
-    text-decoration: none;
-}
-
-.episode-list a:hover {
-    background-color: var(--color-primary);
-}
-
-.episode-list p {
-    font-size: 0.8em;
-    line-height: 1.3;
 }
 
 
