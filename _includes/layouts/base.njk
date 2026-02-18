@@ -51,6 +51,22 @@
                 <li><a href="/feed.rss">{% icon 'rss' %} RSS</a>
                 <li><a href="mailto:tto@koser.us">{% icon 'mail' %} tto@koser.us</a>
             </ol>
+            
+            <div class="mini-poster-parent">
+                <h2>NOW PLAYING</h2>
+                <div class="mini-poster-container">
+                    {% set currentEpisode = collections.episodes | last %}
+                    {% episodeMiniPoster currentEpisode.data.number, currentEpisode.data.title, currentEpisode.url %}
+                </div>
+            </div>
+
+            <div class="mini-poster-parent">
+                <h2>FEATURED</h2>
+                <div class="mini-poster-container">
+                    {% set featuredEpisode = collections.featured | last %}
+                    {% episodeMiniPoster featuredEpisode.data.number, featuredEpisode.data.title, featuredEpisode.url %}
+                </div>
+            </div>
         </nav>
         <footer class="site-footer">
             <ol>
