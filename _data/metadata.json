@@ -7,5 +7,30 @@
     "site_description": "Ten to One, the podcast where Melissa and Brian Koser make top ten lists about everything",
     "site_url": "https://tto.koser.us",
     "facebook_image": "https://tto.koser.us/img/logo-facebook.png",
-    "twitter_image": "https://tto.koser.us/img/favicons/apple-touch-icon.png"
+    "twitter_image": "https://tto.koser.us/img/favicons/apple-touch-icon.png",
+    "host_poster_last_name_offset": {
+        "Brian Koser": "2.3em",
+        "Melissa Koser": "3.0em",
+        "Aaron Smith": "2.6em",
+        "Ben De Bono": "1.6em",
+        "Charity Tolbert": "3em",
+        "Clint Patterson": "1.9em",
+        "Colten Jernigan": "2.4em",
+        "Jay Champagne": "1.6em",
+        "Johanna Wilson": "3.5em",
+        "Joe Wiggins": "1.3em",
+        "Josh Hutt": "1.9em",
+        "Judd Baroff": "2.2em",
+        "Justin Tolbert": "2.5em",
+        "Heather Wiggins": "3.1em",
+        "Luke Koser": "1.9em",
+        "Matt Anderson": "2em",
+        "Matt Koser": "2em",
+        "Megan Hutt": "2.8em",
+        "Megan Koser": "2.8em",
+        "Micah Bucy": "2.5em",
+        "Rachel Smith": "2.8em",
+        "Tim Binzel": "1.6em",
+        "Zach Koser": "2em"
+    }
 }

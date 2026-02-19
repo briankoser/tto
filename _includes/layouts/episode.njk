@@ -1,27 +1,25 @@
 ---
 layout: site
+credits:
+    - A KOSER FAMILY podcast
+    - Produced by BRIAN KOSER
+    - Logo by MATT KOSER
+    - Music by LUKE KOSER
+    - Website design by BRIAN KOSER
+    - Approved by MELISSA KOSER
+    - Available on devices worldwide
+    - Garish colors provided by THE CIRCUS
 ---
 <article class="post h-entry">
-    <header>
-        <h1 class="post-title p-name">№ {{ number }} {{ title }}</h1>
-        {% for tag in tags %}
-            {% if tag === 'featured' %} {% icon 'ribbon' %} {% endif %}
-        {% endfor %}
-        <time class="post-date dt-published" datetime='{{ date | setEpisodeReleaseTime | machineDate }}'>{{ date | setEpisodeReleaseTime | readableDate }}</time>
-    </header>
-    
+    {% episodePoster guests, hosts, metadata.host_poster_last_name_offset, number, title, date | setEpisodeReleaseTime | machineDate, date | setEpisodeReleaseTime | readableDate | upper, description, metadata.mp3_cdn_url, page.fileSlug, credits %}
+
     <div class="e-content">
         {% if video %}
             {% youtube video %}
         {% endif %}
-        
-        <audio src="{{ metadata.mp3_cdn_url }}/{{ page.fileSlug }}.mp3" preload="metadata" controls>
-        </audio>
-        
-        <p class="description">{{ description }}</p>
 
         <details class="spoilers">
-            <summary>Show Notes (expand)</summary>
+            <summary>Show Notes (click or tap to expand)</summary>
             {{ content | safe }}
 
             {% if notes or youtubeNotes %}

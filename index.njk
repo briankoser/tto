@@ -2,23 +2,15 @@
 layout: home
 ---
 
-<p class="headline">Ten to One is the podcast where Melissa and Brian Koser make top ten lists about everything.</p>
-
-<div class="home-episodes">
-    <div class="section">
-        <h2>{% icon 'new' %} Latest</h2>
-        {% episodeCard collections.episodes | last, collections.episodes | last | getProperty('date') | setEpisodeReleaseTime | readableDate, collections.episodes | last | getProperty('date') | setEpisodeReleaseTime | machineDate, metadata.site_url %}
-        <div class="more"><a href="/episodes">All Episodes</a> {% icon 'next' %}</div>
+<div class="poster-parent">
+    <div class="poster-container">
+        {% set currentEpisode = collections.episodes | last %}
+        <h2>NOW PLAYING</h2>
+        {% episodePoster currentEpisode.data.guests, currentEpisode.data.hosts, metadata.host_poster_last_name_offset, currentEpisode.data.number, currentEpisode.data.title, currentEpisode.data.date | setEpisodeReleaseTime | machineDate, currentEpisode.data.date | setEpisodeReleaseTime | readableDate | upper, currentEpisode.data.description, metadata.mp3_cdn_url, currentEpisode.data.page.fileSlug, currentEpisode.data.credits %}
     </div>
-
-    <div class="section">
-        <h2>{% icon 'ribbon' %} Featured</h2>
-        {% episodeCard collections.featured | last, collections.featured | last | getProperty('date') | setEpisodeReleaseTime | readableDate, collections.featured | last | getProperty('date') | setEpisodeReleaseTime | machineDate, metadata.site_url %}
-        <div class="more"><a href="/featured">All Featured</a> {% icon 'next' %}</div>
+    <div class="poster-container">
+        <h2>FEATURED</h2>
+        {% set featuredEpisode = collections.featured | last %}
+        {% episodePoster featuredEpisode.data.guests, featuredEpisode.data.hosts, metadata.host_poster_last_name_offset, featuredEpisode.data.number, featuredEpisode.data.title, featuredEpisode.data.date | setEpisodeReleaseTime | machineDate, featuredEpisode.data.date | setEpisodeReleaseTime | readableDate | upper, featuredEpisode.data.description, metadata.mp3_cdn_url, featuredEpisode.data.page.fileSlug, featuredEpisode.data.credits %}
     </div>
 </div>
-
-{# <div class="section">
-    <h2>Blog</h2>
-    blog post card - latest
-</div> #}
